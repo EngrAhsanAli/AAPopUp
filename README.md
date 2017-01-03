@@ -57,16 +57,16 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 # Installation
 
-AAPopUp can be installed using CocoaPods, Carthage, or manually.
+`AAPopUp` can be installed using CocoaPods, Carthage, or manually.
 
 
 <div id='section-id-36'/>
 
 ##CocoaPods
 
-AAPopUp is available through [CocoaPods](http://cocoapods.org). To install CocoaPods, run:
+`AAPopUp` is available through [CocoaPods](http://cocoapods.org). To install CocoaPods, run:
 
-$ gem install cocoapods
+`$ gem install cocoapods`
 
 Then create a Podfile with the following contents:
 
@@ -197,17 +197,22 @@ popup.dismissWithTag(9)
 ##Helper functions
 
 You can dismiss your constructed popup by just calling the following method:
-
+```ruby
 func dismissPopUpView(completion: (() -> ())? = nil)
+```
 
 
 You can get any view by its tag defined in storyboard by just calling the following method:
 
+```ruby
 func viewWithTag(_ tag: Int) -> UIView?
+```
 
 You can set default action to a UIButton to dissmiss by calling the following method:
 
+```ruby
 func dismissWithTag(_ tag: Int?)
+```
 
 
 
