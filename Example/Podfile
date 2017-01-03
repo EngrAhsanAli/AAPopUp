@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AAPopUp_Example' do
+  pod 'AAPopUp', :path => '../'
+
+  target 'AAPopUp_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
