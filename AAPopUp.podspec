@@ -1,42 +1,25 @@
-#
-# Be sure to run `pod lib lint AAPopUp.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
-  s.name             = 'AAPopUp'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of AAPopUp.'
+s.name             = 'AAPopUp'
+s.version          = '1.0.0'
+s.summary          = 'AAPopUp is a simple & easy-to-use popup designed to present customizable storyboard based view controller as a modal alert, written in Swift.'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+s.description      = <<-DESC
+AAPopUp is a simple and easy-to-use popup view controller designed to present customizable storyboard based view controller as a modal alert, written in Swift. It supports tag-based and dedicated view controller based implementation.
+DESC
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+s.homepage         = 'https://github.com/EngrAhsanAli/AAPopUp'
+# s.screenshots     = 'www.example.com/demo.gif'
+s.license          = { :type => 'MIT', :file => 'LICENSE' }
+s.author           = { 'Engr. Ahsan Ali' => 'hafiz.m.ahsan.ali@gmail.com' }
+s.source           = { :git => 'https://github.com/EngrAhsanAli/AAPopUp.git', :tag => s.version.to_s }
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/AAPopUp'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Engr. Ahsan Ali' => 'hafiz.m.ahsan.ali@gmail.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/AAPopUp.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
 
-  s.ios.deployment_target = '8.0'
+s.ios.deployment_target = '8.0'
 
-  s.source_files = 'AAPopUp/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'AAPopUp' => ['AAPopUp/Assets/*.png']
-  # }
+s.source_files = 'AAPopUp/Classes/**/*'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+s.dependency 'TPKeyboardAvoiding'
+
 end
+
