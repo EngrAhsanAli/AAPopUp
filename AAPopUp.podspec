@@ -8,7 +8,7 @@ AAPopUp is a simple and easy-to-use popup view controller designed to present cu
 DESC
 
 s.homepage         = 'https://github.com/EngrAhsanAli/AAPopUp'
-s.screenshots     = 'https://github.com/EngrAhsanAli/AAPopUp/blob/master/Screenshots/demo.gif'
+# s.screenshots     = 'https://github.com/EngrAhsanAli/AAPopUp/blob/master/Screenshots/demo.gif'
 s.license          = { :type => 'MIT', :file => 'LICENSE' }
 s.author           = { 'Engr. Ahsan Ali' => 'hafiz.m.ahsan.ali@gmail.com' }
 s.source           = { :git => 'https://github.com/EngrAhsanAli/AAPopUp.git', :tag => s.version.to_s }
