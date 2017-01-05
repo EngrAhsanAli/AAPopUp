@@ -9,6 +9,7 @@
   - [CocoaPods](#section-id-36)
   - [Carthage](#section-id-61)
   - [Manual Installation](#section-id-79)
+- [Getting Started](#section-id-87)
   - [Define Global Options:](#section-id-88)
   - [Define Popups through Identifiers](#section-id-100)
   - [Construct your first Popup!](#section-id-120)
@@ -113,7 +114,9 @@ import AAPopUp
 
 If you prefer not to use either of the above mentioned dependency managers, you can integrate `AAPopUp` into your project manually by adding the files contained in the Classes folder to your project.
 
-Getting Started
+<div id='section-id-87'/>
+
+#Getting Started
 ----------
 
 > You need to put all contents of popup (UILabels, UIButtons etc) in a single view in the storyboard
