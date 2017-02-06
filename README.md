@@ -53,6 +53,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 - iOS 8.0+
 - Xcode 8.0+
+- Swift 3+
 
 <div id='section-id-31'/>
 

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = 'AAPopUp'
-s.version          = '1.0.1'
+s.version          = '0.1.0'
 s.summary          = 'AAPopUp is a simple & easy-to-use popup designed to present customizable storyboard based view controller modal alert, written in Swift.'
 
 s.description      = <<-DESC
@@ -19,7 +19,6 @@ s.ios.deployment_target = '8.0'
 
 s.source_files = 'AAPopUp/Classes/**/*'
 
-s.dependency 'TPKeyboardAvoiding'
 
 end
 

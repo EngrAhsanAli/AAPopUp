@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         // MARK:- View Did Load Here
         
         let label = popup.viewWithTag(10) as! UILabel
-        label.text = "Demo Label"
+        label.text = "Welcome to AAPopUp!"
         
         
         

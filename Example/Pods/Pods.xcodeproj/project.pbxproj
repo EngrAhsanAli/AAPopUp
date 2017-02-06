@@ -7,132 +7,73 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06D0EA48C2F7C25770AC20B76160CB85 /* TPKeyboardAvoiding-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 729053D3B54B81402AC12EA7BDA7D90B /* TPKeyboardAvoiding-dummy.m */; };
-		43FEC3FDF2CC7BB1DB498BAE13F907F3 /* TPKeyboardAvoiding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AC6D8E94C701B2ABDAE4871CF616D7 /* TPKeyboardAvoiding.framework */; };
-		51E5E1B7A00993F15BC7A473A80BED91 /* Pods-AAPopUp_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 883C518157F37E52B27224CEFF39942B /* Pods-AAPopUp_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		63B37B33C21F98A3E759083754E68987 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 410310049D2E0760ECAD696C01BC6641 /* TPKeyboardAvoidingTableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		65AAC4102515D0AAF70C626417BCBBC8 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FD299429537EB2ADD7B2CEC541716456 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		6DAB7BB84903B74ED05DB6DF4AD4031E /* TPKeyboardAvoidingTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = FDA7540DAFBAEBD0F735F7BD3FE5CE4C /* TPKeyboardAvoidingTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7998E58223827B532744A6C9535EA9D0 /* Pods-AAPopUp_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 646107B5F9038E72B5CF111EF84E86C1 /* Pods-AAPopUp_Example-dummy.m */; };
-		95F1EE80E9F4A5268B5F10EF1976D6CE /* AAPopUp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F688470933C1D2E04F66248972E0717 /* AAPopUp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C5D0B0E6A3CFFC9D52C6C6C5BA9453B /* TPKeyboardAvoidingScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = DBE9516AC63E7D13D8D499B74E6477A7 /* TPKeyboardAvoidingScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A8A7577C8397F3C465898A27F295ABB1 /* AAPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BCA6502D9AC5321E3D9AEBBD1BE16F /* AAPopUp.swift */; };
-		AC8ACB4FD7F7A7AB22F5C230C725CA57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B5A507F3ABC0436204045E36FE80DA /* Foundation.framework */; };
-		B3EC6C96EEEAE754A3E6D37DAE05740C /* TPKeyboardAvoiding-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BF8162B14477CA4E80F0408DCD72542 /* TPKeyboardAvoiding-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C49041992A72799F851699A2AC3135C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B5A507F3ABC0436204045E36FE80DA /* Foundation.framework */; };
-		CEA3EB08C4F83510C420AEB4D03B6BAD /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C30A643FA20033FBFF28B74D8046EB3 /* Helper.swift */; };
-		D313B69AF72031F6AC137F129BB43702 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A405D45DEFE0A3D269C6622186C957E3 /* TPKeyboardAvoidingCollectionView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		D4A015E30A24C12F922EE22C6A1A4F7F /* UIScrollView+TPKeyboardAvoidingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7585CE018D429CC0B8BCEC6FD085541B /* UIScrollView+TPKeyboardAvoidingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DBB7EF6116BD73F3F724C0FE623223A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B5A507F3ABC0436204045E36FE80DA /* Foundation.framework */; };
-		E65FD16709DD87309E74F269312CD59F /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6814AF620C1DA0B641B91F9FDCF7680C /* TPKeyboardAvoidingScrollView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F921BA85EC90A7A12746279EC5937DDD /* AAPopUp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0F7A455105ED8D5D54F2AC50CF2775 /* AAPopUp-dummy.m */; };
-		FA995EDE9DA96840269FC2E1267E375D /* TPKeyboardAvoidingCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DA452346951E7AFE04D3FA6DEEF215D /* TPKeyboardAvoidingCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25B77039782144DB8976B1F02FDB9E9A /* Pods-AAPopUp_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 883C518157F37E52B27224CEFF39942B /* Pods-AAPopUp_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F7E3EB9C1294DB9C7AF38C8E8EB9B75 /* Pods-AAPopUp_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 646107B5F9038E72B5CF111EF84E86C1 /* Pods-AAPopUp_Example-dummy.m */; };
+		3F9ADFA330567B87889D127D2BF9C7F4 /* AAPopUp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F688470933C1D2E04F66248972E0717 /* AAPopUp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42AEAE381E4911CF00B07F51 /* AAPopUp+Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AEAE371E4911CF00B07F51 /* AAPopUp+Global.swift */; };
+		5859160DB2F071AA867FA9A91CB9BE70 /* AAPopUp+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B240EAD1412AE717FD9C47744F03BB17 /* AAPopUp+Helper.swift */; };
+		90E0429ED8ABCCCDC9F319E7CBA439FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		A5C76EFA0A6B0EA46EF5A20296640594 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		DB28909B659653B3065021451945B199 /* AAPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF1BC1FFA6F0E6155B4BE319C436613 /* AAPopUp.swift */; };
+		F98BFCEFA67F4004B4F038ED3C34CF8A /* AAPopUp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0F7A455105ED8D5D54F2AC50CF2775 /* AAPopUp-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3449B0ADFC98E445FB4239EDF34A2EAE /* PBXContainerItemProxy */ = {
+		F5BE306EB3EB58F486CBA2946333F4A6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D20C41A1FEBAE316F7B4259AF11D30AB;
+			remoteGlobalIDString = 414BBCA1F5A6917BF933F1CAA785611D;
 			remoteInfo = AAPopUp;
-		};
-		BCDD09CDF219880DEA22C0B0041D6586 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BB54C53FF517646B15F163F6B1BE756D;
-			remoteInfo = TPKeyboardAvoiding;
-		};
-		D9AF92EF3D10DB6882CF736125C6300A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BB54C53FF517646B15F163F6B1BE756D;
-			remoteInfo = TPKeyboardAvoiding;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		021C36B9E5FBBB9BE55FB14C5F870B87 /* AAPopUp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AAPopUp.modulemap; sourceTree = "<group>"; };
-		0C30A643FA20033FBFF28B74D8046EB3 /* Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		021C36B9E5FBBB9BE55FB14C5F870B87 /* AAPopUp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AAPopUp.modulemap; sourceTree = "<group>"; };
+		0EFC9D1C4497C9BFC5C1AB65F505D836 /* AAPopUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AAPopUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		209686869649719F770961EA6DACFFC7 /* AAPopUp-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AAPopUp-prefix.pch"; sourceTree = "<group>"; };
-		22BCA6502D9AC5321E3D9AEBBD1BE16F /* AAPopUp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AAPopUp.swift; sourceTree = "<group>"; };
-		274781B65B86E4D407A405EF58F4F7C3 /* TPKeyboardAvoiding.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TPKeyboardAvoiding.xcconfig; sourceTree = "<group>"; };
 		2B0F7A455105ED8D5D54F2AC50CF2775 /* AAPopUp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AAPopUp-dummy.m"; sourceTree = "<group>"; };
+		2FF1BC1FFA6F0E6155B4BE319C436613 /* AAPopUp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AAPopUp.swift; sourceTree = "<group>"; };
 		3F688470933C1D2E04F66248972E0717 /* AAPopUp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AAPopUp-umbrella.h"; sourceTree = "<group>"; };
-		410310049D2E0760ECAD696C01BC6641 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingTableView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		42AEAE371E4911CF00B07F51 /* AAPopUp+Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AAPopUp+Global.swift"; sourceTree = "<group>"; };
 		49133BF296B163BF6E4FD1C8A94DF0BA /* Pods-AAPopUp_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AAPopUp_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		53D1185460600C39538E71B11B7FC9B1 /* TPKeyboardAvoiding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TPKeyboardAvoiding.framework; path = TPKeyboardAvoiding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5BF8162B14477CA4E80F0408DCD72542 /* TPKeyboardAvoiding-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPKeyboardAvoiding-umbrella.h"; sourceTree = "<group>"; };
 		5F0C47C68D4EFED0681D3185B5F3BF5B /* Pods-AAPopUp_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AAPopUp_Example-resources.sh"; sourceTree = "<group>"; };
 		646107B5F9038E72B5CF111EF84E86C1 /* Pods-AAPopUp_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AAPopUp_Example-dummy.m"; sourceTree = "<group>"; };
-		6555F833C6889E6F77868B4E76FC0480 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		65AC6D8E94C701B2ABDAE4871CF616D7 /* TPKeyboardAvoiding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TPKeyboardAvoiding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6773AA50A1B881759A1A69C6F3E2CFD4 /* AAPopUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AAPopUp.framework; path = AAPopUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6814AF620C1DA0B641B91F9FDCF7680C /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingScrollView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
-		729053D3B54B81402AC12EA7BDA7D90B /* TPKeyboardAvoiding-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TPKeyboardAvoiding-dummy.m"; sourceTree = "<group>"; };
-		7585CE018D429CC0B8BCEC6FD085541B /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+TPKeyboardAvoidingAdditions.h"; path = "TPKeyboardAvoiding/UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
 		876224CA0582A7D315F9BF7320CF8119 /* AAPopUp.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AAPopUp.xcconfig; sourceTree = "<group>"; };
 		883C518157F37E52B27224CEFF39942B /* Pods-AAPopUp_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AAPopUp_Example-umbrella.h"; sourceTree = "<group>"; };
-		8DA452346951E7AFE04D3FA6DEEF215D /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingCollectionView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A405D45DEFE0A3D269C6622186C957E3 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingCollectionView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A6293981E68269E684369B94E3A9F2ED /* Pods_AAPopUp_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AAPopUp_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A75D50F18F73464292D3B591898EAA9D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A97DFFC0DD6B9E222B5ABF4A75C08DCA /* Pods-AAPopUp_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AAPopUp_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		B240EAD1412AE717FD9C47744F03BB17 /* AAPopUp+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "AAPopUp+Helper.swift"; sourceTree = "<group>"; };
 		B295A729C276FE654E706BE3624CDF3F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B396E1434DC110004844142898B0EC45 /* Pods-AAPopUp_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AAPopUp_Example-frameworks.sh"; sourceTree = "<group>"; };
-		BB79A5C08CBA6E6FE2350B4F94CEBD3B /* Pods_AAPopUp_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AAPopUp_Example.framework; path = "Pods-AAPopUp_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE4923DFBB1EAD8F812BC6A2749E46B2 /* TPKeyboardAvoiding-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPKeyboardAvoiding-prefix.pch"; sourceTree = "<group>"; };
 		C786652D5D099CA86C43D92744310528 /* Pods-AAPopUp_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AAPopUp_Example.release.xcconfig"; sourceTree = "<group>"; };
-		DBE9516AC63E7D13D8D499B74E6477A7 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingScrollView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
-		DD341199958D80102060C7D8C796A7BF /* Pods-AAPopUp_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AAPopUp_Example.modulemap"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DD341199958D80102060C7D8C796A7BF /* Pods-AAPopUp_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AAPopUp_Example.modulemap"; sourceTree = "<group>"; };
 		E7FCE87BCD6CACE5BFE87901F5227679 /* Pods-AAPopUp_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AAPopUp_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		F3B5A507F3ABC0436204045E36FE80DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		F95E7DDE5C71F911F223DD00FD9FA52C /* TPKeyboardAvoiding.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TPKeyboardAvoiding.modulemap; sourceTree = "<group>"; };
-		FD299429537EB2ADD7B2CEC541716456 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+TPKeyboardAvoidingAdditions.m"; path = "TPKeyboardAvoiding/UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
-		FDA7540DAFBAEBD0F735F7BD3FE5CE4C /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingTableView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		19F96F39EDCA462371BCF805A732BD63 /* Frameworks */ = {
+		A693A078CB2FDA19377965972DEB5D35 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C49041992A72799F851699A2AC3135C7 /* Foundation.framework in Frameworks */,
+				A5C76EFA0A6B0EA46EF5A20296640594 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		40238302A3373AB8776D19F425123104 /* Frameworks */ = {
+		BC18B49295ED1841D2E1ED2BD206184A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC8ACB4FD7F7A7AB22F5C230C725CA57 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FE347108425FE860578720792A482836 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DBB7EF6116BD73F3F724C0FE623223A0 /* Foundation.framework in Frameworks */,
-				43FEC3FDF2CC7BB1DB498BAE13F907F3 /* TPKeyboardAvoiding.framework in Frameworks */,
+				90E0429ED8ABCCCDC9F319E7CBA439FE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02182C8C42FA4B7544ED63FBD3AE466F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6773AA50A1B881759A1A69C6F3E2CFD4 /* AAPopUp.framework */,
-				BB79A5C08CBA6E6FE2350B4F94CEBD3B /* Pods_AAPopUp_Example.framework */,
-				53D1185460600C39538E71B11B7FC9B1 /* TPKeyboardAvoiding.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		08633CA5779C483AB9DF171AD2310EE4 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,12 +82,13 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		26B02AB5A3C4CA59476EC03FD556F377 /* Pods */ = {
+		1F2459D7C2DA4239945FA2869DBE9505 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C2BF02B87387107CD7013346F91E0889 /* TPKeyboardAvoiding */,
+				0EFC9D1C4497C9BFC5C1AB65F505D836 /* AAPopUp.framework */,
+				A6293981E68269E684369B94E3A9F2ED /* Pods_AAPopUp_Example.framework */,
 			);
-			name = Pods;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		29AAB9441BAA8BD738B789105602433D /* Pods-AAPopUp_Example */ = {
@@ -170,24 +112,9 @@
 		3377FE0EA7918FAAE0E670202DB055F5 /* AAPopUp */ = {
 			isa = PBXGroup;
 			children = (
-				D38263AE6AAD0E60ED75ECDDA32DD1B7 /* Classes */,
+				B2669E6A9F35BDECBAE385839CA6F409 /* Classes */,
 			);
-			name = AAPopUp;
 			path = AAPopUp;
-			sourceTree = "<group>";
-		};
-		5516C6D25988DFCBEE506A02F0FCC816 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				6555F833C6889E6F77868B4E76FC0480 /* Info.plist */,
-				F95E7DDE5C71F911F223DD00FD9FA52C /* TPKeyboardAvoiding.modulemap */,
-				274781B65B86E4D407A405EF58F4F7C3 /* TPKeyboardAvoiding.xcconfig */,
-				729053D3B54B81402AC12EA7BDA7D90B /* TPKeyboardAvoiding-dummy.m */,
-				BE4923DFBB1EAD8F812BC6A2749E46B2 /* TPKeyboardAvoiding-prefix.pch */,
-				5BF8162B14477CA4E80F0408DCD72542 /* TPKeyboardAvoiding-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/TPKeyboardAvoiding";
 			sourceTree = "<group>";
 		};
 		670445217C6AE75EDAC9AF3E15972CBD /* Support Files */ = {
@@ -204,60 +131,41 @@
 			path = "Example/Pods/Target Support Files/AAPopUp";
 			sourceTree = "<group>";
 		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				08633CA5779C483AB9DF171AD2310EE4 /* Development Pods */,
-				927054A5B8ECF65713E15EC87C34C5D6 /* Frameworks */,
-				26B02AB5A3C4CA59476EC03FD556F377 /* Pods */,
-				02182C8C42FA4B7544ED63FBD3AE466F /* Products */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				1F2459D7C2DA4239945FA2869DBE9505 /* Products */,
 				FB4E55CDBB639A0C7E48B210BBB714B1 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		927054A5B8ECF65713E15EC87C34C5D6 /* Frameworks */ = {
+		B2669E6A9F35BDECBAE385839CA6F409 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				65AC6D8E94C701B2ABDAE4871CF616D7 /* TPKeyboardAvoiding.framework */,
-				B6B027C7C93D75C1F96C89B5BD0B76B1 /* iOS */,
+				2FF1BC1FFA6F0E6155B4BE319C436613 /* AAPopUp.swift */,
+				B240EAD1412AE717FD9C47744F03BB17 /* AAPopUp+Helper.swift */,
+				42AEAE371E4911CF00B07F51 /* AAPopUp+Global.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B6B027C7C93D75C1F96C89B5BD0B76B1 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				F3B5A507F3ABC0436204045E36FE80DA /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		C2BF02B87387107CD7013346F91E0889 /* TPKeyboardAvoiding */ = {
-			isa = PBXGroup;
-			children = (
-				8DA452346951E7AFE04D3FA6DEEF215D /* TPKeyboardAvoidingCollectionView.h */,
-				A405D45DEFE0A3D269C6622186C957E3 /* TPKeyboardAvoidingCollectionView.m */,
-				DBE9516AC63E7D13D8D499B74E6477A7 /* TPKeyboardAvoidingScrollView.h */,
-				6814AF620C1DA0B641B91F9FDCF7680C /* TPKeyboardAvoidingScrollView.m */,
-				FDA7540DAFBAEBD0F735F7BD3FE5CE4C /* TPKeyboardAvoidingTableView.h */,
-				410310049D2E0760ECAD696C01BC6641 /* TPKeyboardAvoidingTableView.m */,
-				7585CE018D429CC0B8BCEC6FD085541B /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
-				FD299429537EB2ADD7B2CEC541716456 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
-				5516C6D25988DFCBEE506A02F0FCC816 /* Support Files */,
-			);
-			name = TPKeyboardAvoiding;
-			path = TPKeyboardAvoiding;
-			sourceTree = "<group>";
-		};
-		D38263AE6AAD0E60ED75ECDDA32DD1B7 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				22BCA6502D9AC5321E3D9AEBBD1BE16F /* AAPopUp.swift */,
-				0C30A643FA20033FBFF28B74D8046EB3 /* Helper.swift */,
-			);
-			name = Classes;
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		DF27AB9B0EB85FE57D6C99158E8E76DE /* AAPopUp */ = {
@@ -281,89 +189,58 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3F6BBAC597D90C49E096E34B736EDB56 /* Headers */ = {
+		3EB41C3767DF75B2A446CD43A35F12E3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51E5E1B7A00993F15BC7A473A80BED91 /* Pods-AAPopUp_Example-umbrella.h in Headers */,
+				25B77039782144DB8976B1F02FDB9E9A /* Pods-AAPopUp_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4BFE6C97E1D1A887FC991201A8AB72FD /* Headers */ = {
+		EECB560F070B626616D70DACC55E7DA6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3EC6C96EEEAE754A3E6D37DAE05740C /* TPKeyboardAvoiding-umbrella.h in Headers */,
-				FA995EDE9DA96840269FC2E1267E375D /* TPKeyboardAvoidingCollectionView.h in Headers */,
-				9C5D0B0E6A3CFFC9D52C6C6C5BA9453B /* TPKeyboardAvoidingScrollView.h in Headers */,
-				6DAB7BB84903B74ED05DB6DF4AD4031E /* TPKeyboardAvoidingTableView.h in Headers */,
-				D4A015E30A24C12F922EE22C6A1A4F7F /* UIScrollView+TPKeyboardAvoidingAdditions.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CDD9FEF6875331BDAC3B28F720B77FAF /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				95F1EE80E9F4A5268B5F10EF1976D6CE /* AAPopUp-umbrella.h in Headers */,
+				3F9ADFA330567B87889D127D2BF9C7F4 /* AAPopUp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2A483A0DAA18B054ED7A1BFADEC2FE7B /* Pods-AAPopUp_Example */ = {
+		414BBCA1F5A6917BF933F1CAA785611D /* AAPopUp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4A4AA78635EAF104B7057D4B37E1290C /* Build configuration list for PBXNativeTarget "Pods-AAPopUp_Example" */;
+			buildConfigurationList = C642321131F2BFBA2080A087B6A2412F /* Build configuration list for PBXNativeTarget "AAPopUp" */;
 			buildPhases = (
-				91B85C3DDEE7836217033371423CF474 /* Sources */,
-				19F96F39EDCA462371BCF805A732BD63 /* Frameworks */,
-				3F6BBAC597D90C49E096E34B736EDB56 /* Headers */,
+				11F20212DBD1BB16933D0907953BB9A7 /* Sources */,
+				BC18B49295ED1841D2E1ED2BD206184A /* Frameworks */,
+				EECB560F070B626616D70DACC55E7DA6 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FFB0B650F0FF2C9401D9C82ADDD874B4 /* PBXTargetDependency */,
-				CDD82C3BBF21C8A292D1BFDD793AB0D3 /* PBXTargetDependency */,
-			);
-			name = "Pods-AAPopUp_Example";
-			productName = "Pods-AAPopUp_Example";
-			productReference = BB79A5C08CBA6E6FE2350B4F94CEBD3B /* Pods_AAPopUp_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		BB54C53FF517646B15F163F6B1BE756D /* TPKeyboardAvoiding */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9F7BAE7C68EC8CB7D60A4D3482A8498A /* Build configuration list for PBXNativeTarget "TPKeyboardAvoiding" */;
-			buildPhases = (
-				CCC526FE2C9285DE7327119521F696E4 /* Sources */,
-				40238302A3373AB8776D19F425123104 /* Frameworks */,
-				4BFE6C97E1D1A887FC991201A8AB72FD /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = TPKeyboardAvoiding;
-			productName = TPKeyboardAvoiding;
-			productReference = 53D1185460600C39538E71B11B7FC9B1 /* TPKeyboardAvoiding.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D20C41A1FEBAE316F7B4259AF11D30AB /* AAPopUp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7EE2D603B058DD23888DB65378208DDB /* Build configuration list for PBXNativeTarget "AAPopUp" */;
-			buildPhases = (
-				32B87614E3E4A51E50EE90CFE3355DA0 /* Sources */,
-				FE347108425FE860578720792A482836 /* Frameworks */,
-				CDD9FEF6875331BDAC3B28F720B77FAF /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				10D9288EC32D79CA5D634AA0FDB89680 /* PBXTargetDependency */,
 			);
 			name = AAPopUp;
 			productName = AAPopUp;
-			productReference = 6773AA50A1B881759A1A69C6F3E2CFD4 /* AAPopUp.framework */;
+			productReference = 0EFC9D1C4497C9BFC5C1AB65F505D836 /* AAPopUp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D4322462ACFD800A80E8EB9FC98F0EE1 /* Pods-AAPopUp_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEC06F0199E19DAC9D78B96AF08734A9 /* Build configuration list for PBXNativeTarget "Pods-AAPopUp_Example" */;
+			buildPhases = (
+				F70E991AA393DCC61B7D9690C4340375 /* Sources */,
+				A693A078CB2FDA19377965972DEB5D35 /* Frameworks */,
+				3EB41C3767DF75B2A446CD43A35F12E3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8493FF2911D022285C53350A6B39915 /* PBXTargetDependency */,
+			);
+			name = "Pods-AAPopUp_Example";
+			productName = "Pods-AAPopUp_Example";
+			productReference = A6293981E68269E684369B94E3A9F2ED /* Pods_AAPopUp_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -383,113 +260,57 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 02182C8C42FA4B7544ED63FBD3AE466F /* Products */;
+			productRefGroup = 1F2459D7C2DA4239945FA2869DBE9505 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D20C41A1FEBAE316F7B4259AF11D30AB /* AAPopUp */,
-				2A483A0DAA18B054ED7A1BFADEC2FE7B /* Pods-AAPopUp_Example */,
-				BB54C53FF517646B15F163F6B1BE756D /* TPKeyboardAvoiding */,
+				414BBCA1F5A6917BF933F1CAA785611D /* AAPopUp */,
+				D4322462ACFD800A80E8EB9FC98F0EE1 /* Pods-AAPopUp_Example */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		32B87614E3E4A51E50EE90CFE3355DA0 /* Sources */ = {
+		11F20212DBD1BB16933D0907953BB9A7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F921BA85EC90A7A12746279EC5937DDD /* AAPopUp-dummy.m in Sources */,
-				A8A7577C8397F3C465898A27F295ABB1 /* AAPopUp.swift in Sources */,
-				CEA3EB08C4F83510C420AEB4D03B6BAD /* Helper.swift in Sources */,
+				5859160DB2F071AA867FA9A91CB9BE70 /* AAPopUp+Helper.swift in Sources */,
+				42AEAE381E4911CF00B07F51 /* AAPopUp+Global.swift in Sources */,
+				F98BFCEFA67F4004B4F038ED3C34CF8A /* AAPopUp-dummy.m in Sources */,
+				DB28909B659653B3065021451945B199 /* AAPopUp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		91B85C3DDEE7836217033371423CF474 /* Sources */ = {
+		F70E991AA393DCC61B7D9690C4340375 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7998E58223827B532744A6C9535EA9D0 /* Pods-AAPopUp_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CCC526FE2C9285DE7327119521F696E4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				06D0EA48C2F7C25770AC20B76160CB85 /* TPKeyboardAvoiding-dummy.m in Sources */,
-				D313B69AF72031F6AC137F129BB43702 /* TPKeyboardAvoidingCollectionView.m in Sources */,
-				E65FD16709DD87309E74F269312CD59F /* TPKeyboardAvoidingScrollView.m in Sources */,
-				63B37B33C21F98A3E759083754E68987 /* TPKeyboardAvoidingTableView.m in Sources */,
-				65AAC4102515D0AAF70C626417BCBBC8 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				2F7E3EB9C1294DB9C7AF38C8E8EB9B75 /* Pods-AAPopUp_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		10D9288EC32D79CA5D634AA0FDB89680 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TPKeyboardAvoiding;
-			target = BB54C53FF517646B15F163F6B1BE756D /* TPKeyboardAvoiding */;
-			targetProxy = D9AF92EF3D10DB6882CF736125C6300A /* PBXContainerItemProxy */;
-		};
-		CDD82C3BBF21C8A292D1BFDD793AB0D3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TPKeyboardAvoiding;
-			target = BB54C53FF517646B15F163F6B1BE756D /* TPKeyboardAvoiding */;
-			targetProxy = BCDD09CDF219880DEA22C0B0041D6586 /* PBXContainerItemProxy */;
-		};
-		FFB0B650F0FF2C9401D9C82ADDD874B4 /* PBXTargetDependency */ = {
+		C8493FF2911D022285C53350A6B39915 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AAPopUp;
-			target = D20C41A1FEBAE316F7B4259AF11D30AB /* AAPopUp */;
-			targetProxy = 3449B0ADFC98E445FB4239EDF34A2EAE /* PBXContainerItemProxy */;
+			target = 414BBCA1F5A6917BF933F1CAA785611D /* AAPopUp */;
+			targetProxy = F5BE306EB3EB58F486CBA2946333F4A6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		034EA6AE8A8B8EA93FB1058B6D08EA0F /* Release */ = {
+		2B32F2104D37ED204D405C1865D1D428 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 274781B65B86E4D407A405EF58F4F7C3 /* TPKeyboardAvoiding.xcconfig */;
+			baseConfigurationReference = E7FCE87BCD6CACE5BFE87901F5227679 /* Pods-AAPopUp_Example.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TPKeyboardAvoiding/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = TPKeyboardAvoiding;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		1326518D35108EA7273DDC1F23D3A591 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C786652D5D099CA86C43D92744310528 /* Pods-AAPopUp_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -502,7 +323,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-AAPopUp_Example/Pods-AAPopUp_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -510,11 +331,77 @@
 				PRODUCT_NAME = Pods_AAPopUp_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		490B6EBFAA20866FC9516C54F8A9D6BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 876224CA0582A7D315F9BF7320CF8119 /* AAPopUp.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AAPopUp/AAPopUp-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AAPopUp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AAPopUp/AAPopUp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AAPopUp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		746CF1F52447B9B3A41A070E27F964B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 876224CA0582A7D315F9BF7320CF8119 /* AAPopUp.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AAPopUp/AAPopUp-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AAPopUp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AAPopUp/AAPopUp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AAPopUp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -555,39 +442,6 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
-		};
-		9212605F529BAB65349C504594D321C8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 876224CA0582A7D315F9BF7320CF8119 /* AAPopUp.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AAPopUp/AAPopUp-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AAPopUp/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AAPopUp/AAPopUp.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = AAPopUp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -633,77 +487,9 @@
 			};
 			name = Debug;
 		};
-		D232AC42CA698DCE92CB1AFCB913F878 /* Debug */ = {
+		C5F601980478D91E674A9AA9AE6CADEC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 274781B65B86E4D407A405EF58F4F7C3 /* TPKeyboardAvoiding.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TPKeyboardAvoiding/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = TPKeyboardAvoiding;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		DCAD3A8012E9635ECD277BFFBFDAD2AA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7FCE87BCD6CACE5BFE87901F5227679 /* Pods-AAPopUp_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-AAPopUp_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AAPopUp_Example/Pods-AAPopUp_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_AAPopUp_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		DDF60F8B3925773BA48DDD65E2F69F43 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 876224CA0582A7D315F9BF7320CF8119 /* AAPopUp.xcconfig */;
+			baseConfigurationReference = C786652D5D099CA86C43D92744310528 /* Pods-AAPopUp_Example.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -716,17 +502,20 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AAPopUp/AAPopUp-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AAPopUp/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-AAPopUp_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AAPopUp/AAPopUp.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AAPopUp_Example/Pods-AAPopUp_Example.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = AAPopUp;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AAPopUp_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -745,29 +534,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4A4AA78635EAF104B7057D4B37E1290C /* Build configuration list for PBXNativeTarget "Pods-AAPopUp_Example" */ = {
+		C642321131F2BFBA2080A087B6A2412F /* Build configuration list for PBXNativeTarget "AAPopUp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DCAD3A8012E9635ECD277BFFBFDAD2AA /* Debug */,
-				1326518D35108EA7273DDC1F23D3A591 /* Release */,
+				746CF1F52447B9B3A41A070E27F964B7 /* Debug */,
+				490B6EBFAA20866FC9516C54F8A9D6BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7EE2D603B058DD23888DB65378208DDB /* Build configuration list for PBXNativeTarget "AAPopUp" */ = {
+		DEC06F0199E19DAC9D78B96AF08734A9 /* Build configuration list for PBXNativeTarget "Pods-AAPopUp_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9212605F529BAB65349C504594D321C8 /* Debug */,
-				DDF60F8B3925773BA48DDD65E2F69F43 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9F7BAE7C68EC8CB7D60A4D3482A8498A /* Build configuration list for PBXNativeTarget "TPKeyboardAvoiding" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D232AC42CA698DCE92CB1AFCB913F878 /* Debug */,
-				034EA6AE8A8B8EA93FB1058B6D08EA0F /* Release */,
+				2B32F2104D37ED204D405C1865D1D428 /* Debug */,
+				C5F601980478D91E674A9AA9AE6CADEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

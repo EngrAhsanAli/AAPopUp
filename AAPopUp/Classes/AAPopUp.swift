@@ -7,49 +7,68 @@
 //
 
 import UIKit
-import TPKeyboardAvoiding
 
 open class AAPopUp: UIViewController {
     
+    /// Global options
     open static var globalOptions = AAPopUpOptions()
     
+    /// Local options
     var options: AAPopUpOptions!
+
+    /// Popup View controller
+    var viewController: UIViewController!
     
-    var popupViewController: UIViewController!
+    /// Keyboard visibility flag
+    var keyboardIsVisible = false
     
-    init() {
-        super.init(nibName:nil, bundle:nil)
-    }
-    
-    public convenience init(popup: AAPopUps<String?, String>, withOptions options: AAPopUpOptions? = nil) {
+    /// Init with AAPopUps object with options
+    ///
+    /// - Parameters:
+    ///   - popup: AAPopUps object
+    ///   - options: AAPopUpOptions (optional)
+    public convenience init(popup: AAPopUps<String?, String>,
+                            withOptions options: AAPopUpOptions? = nil) {
         
         self.init()
         
+        self.viewController = getViewController(popup)
         initOptions(options)
         
-        let vc = popup.getViewController(popup)
-        initPopUp(vc)
+        initPopUp()
         
     }
     
-    public convenience init(popup: UIViewController, withOptions options: AAPopUpOptions? = nil) {
-        
+    /// Init with UIViewController of AAPopUp with options
+    ///
+    /// - Parameters:
+    ///   - popup: UIViewController of popup
+    ///   - options: AAPopUpOptions (optional)
+    public convenience init(popup: UIViewController,
+                            withOptions options: AAPopUpOptions? = nil) {
         self.init()
+        self.viewController = popup
         
         initOptions(options)
-        initPopUp(popup)
+        initPopUp()
         
     }
     
-    required public init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
+
     
-    
+    /// Popup did load
     override open func viewDidLoad() {
         super.viewDidLoad()
+        registerKeyboardNotifications()
+    
     }
     
+    /// Popup did appear
+    ///
+    /// - Parameter animated: flag
     override open func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
@@ -58,32 +77,19 @@ open class AAPopUp: UIViewController {
         
     }
     
+    /// layout subviews
     override open func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
-        self.popupViewController.view.center = self.view.center
-        self.popupViewController.view!.layoutIfNeeded()
+        self.viewController.view.center = self.view.center
+        self.viewController.view!.layoutIfNeeded()
         self.view!.setNeedsLayout()
         
     }
-    
-    func getViewController(_ popup: AAPopUps<String?, String>) -> UIViewController {
-        
-        var storyboard_id: String!
-        if let storyboard = popup._storyboard {
-            storyboard_id = storyboard
-        }
-        else if let storyboard = options.storyboardName {
-            storyboard_id = storyboard
-        }
-        else {
-            fatalError("AAPopUp - Invalid Storyboard name. Aborting ...")
-        }
-        
-        let storyboard: UIStoryboard = UIStoryboard(name: storyboard_id, bundle: nil)
-        return storyboard.instantiateViewController(withIdentifier: popup._id)
-    }
-    
+
+    /// init with options if available
+    ///
+    /// - Parameter options: options object AAPopUpOptions
     func initOptions(_ options: AAPopUpOptions?) {
         if let option = options {
             self.options = option
@@ -93,9 +99,11 @@ open class AAPopUp: UIViewController {
         }
     }
     
-    func initPopUp(_ viewController: UIViewController) {
+    
+    /// Create Popupup view
+    func initPopUp() {
         
-        let contentView = viewController.view.subviews[0].bounds
+        let contentView = viewController.view.subviews.first!.bounds
         viewController.view.bounds = contentView
         
         guard !contentView.isEmpty else {
@@ -105,53 +113,51 @@ open class AAPopUp: UIViewController {
         if #available(iOS 9.0, *) {
             self.loadViewIfNeeded()
         }
-        popupViewController = viewController
-        let scrollView = TPKeyboardAvoidingScrollView(frame: self.view.bounds)
+        
+        let scrollView = UIScrollView(frame: self.view.bounds)
         scrollView.contentSize = view.bounds.size
         scrollView.alwaysBounceHorizontal = false
         scrollView.showsVerticalScrollIndicator = false
         scrollView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         scrollView.translatesAutoresizingMaskIntoConstraints = false
-        view!.addSubview(scrollView)
+        view.addSubview(scrollView)
+        scrollView.bindWithBounds()
         
-        addConstrantPin(scrollView, view2: view!)
         
         let scrollContentView = UIView(frame: scrollView.bounds)
         scrollView.addSubview(scrollContentView)
         
-        addConstrantPin(scrollContentView, view2: scrollView)
-        
-        self.addChildViewController(popupViewController)
-        scrollContentView.addSubview(popupViewController.view!)
-        popupViewController.didMove(toParentViewController: self)
+        self.addChildViewController(viewController)
+        scrollContentView.addSubview(viewController.view!)
+        viewController.didMove(toParentViewController: self)
         
         modalPresentationStyle = .overFullScreen
-        popupViewController.view.layer.cornerRadius = options.cornerRadius
-        popupViewController.view.layer.masksToBounds = true
+        viewController.view.layer.cornerRadius = options.cornerRadius
+        viewController.view.layer.masksToBounds = true
         
         togglePopup() // First Invisible Animaiton
     }
     
-    func addConstrantPin(_ view1: Any, view2: Any) {
-        
-        let attrs: [NSLayoutAttribute] = [.top, .bottom, .trailing, .leading]
-        attrs.forEach { (attr) in
-            let constraint = NSLayoutConstraint(item: view1, attribute: attr, relatedBy: .equal, toItem: view2, attribute: attr, multiplier: 1.0, constant: 0.0)
-            self.view.addConstraint(constraint)
-        }
-    }
+
     
+    /// toggle the popup
+    ///
+    /// - Parameter show: flag for show
     func togglePopup(_ show: Bool = false) {
-        if show {
-            self.popupViewController.view.alpha = 1.0
-            self.view.backgroundColor = options.backgroundColor
-            self.popupViewController.view.transform = CGAffineTransform.identity
-            return
+
+        var alpha: CGFloat = 1.0
+        var backgroundColor: UIColor = options.backgroundColor
+        var transform: CGAffineTransform = .identity
+        
+        if !show {
+            alpha = 0.0
+            backgroundColor = backgroundColor.withAlphaComponent(0.0)
+            transform = transform.scaledBy(x: 0.6, y: 0.6)
         }
-            
-        self.popupViewController.view.alpha = 0.0
-        self.view.backgroundColor = options.backgroundColor.withAlphaComponent(0.0)
-        self.popupViewController.view.transform = CGAffineTransform.identity.scaledBy(x: 0.6, y: 0.6)
+        
+        self.viewController.view.alpha = alpha
+        self.view.backgroundColor = backgroundColor
+        self.viewController.view.transform = transform
         
     }
     
@@ -160,14 +166,21 @@ open class AAPopUp: UIViewController {
 }
 
 
-//MARK:- helper functions
+//MARK:- public functions
 
 extension AAPopUp {
 
+    /// get view with tag in popup
+    ///
+    /// - Parameter tag: tag for a view
+    /// - Returns: UIView object
     open func viewWithTag(_ tag: Int) -> UIView? {
         return view.viewWithTag(tag)
     }
     
+    /// dismiss popup with tag
+    ///
+    /// - Parameter tag: tag
     open func dismissWithTag(_ tag: Int?) {
         if let dismissTag = tag {
             if let button = view.viewWithTag(dismissTag) as? UIButton {
@@ -176,10 +189,14 @@ extension AAPopUp {
         }
     }
     
+    /// dismiss popup selector
     func dismissPopup() {
         dismissPopUpView()
     }
 
+    /// present popup with completion
+    ///
+    /// - Parameter completion: view did load closure
     open func present(completion: ((_ popup: AAPopUp) -> ())?) {
         
         guard let root = UIApplication.shared.keyWindow?.rootViewController else {
@@ -192,12 +209,18 @@ extension AAPopUp {
         
     }
     
+    /// present popup view with animation
     func presentPopUpView() {
         UIView.animate(withDuration: options.animationDuration, delay: 0, animations: {() -> Void in
             self.togglePopup(true)
         }, completion: nil)
     }
     
+    
+    
+    /// Dismiss popup with animation
+    ///
+    /// - Parameter completion: completion closure
     open func dismissPopUpView(completion: (() -> ())? = nil) {
         UIView.animate(withDuration: options.animationDuration, animations: {() -> Void in
             self.togglePopup()

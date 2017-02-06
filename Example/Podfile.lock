@@ -1,7 +1,5 @@
 PODS:
-  - AAPopUp (1.0.1):
-    - TPKeyboardAvoiding
-  - TPKeyboardAvoiding (1.3.1)
+  - AAPopUp (1.0.1)
 
 DEPENDENCIES:
   - AAPopUp (from `../`)
@@ -11,9 +9,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  AAPopUp: 656b355e41e76df064a40f1d2667c9516831c553
-  TPKeyboardAvoiding: 0d6af20e95e2850f4c621841225b59ec7d8dd852
+  AAPopUp: 098fc63cdd8b7143f668aec7d180d305cda8d5ec
 
 PODFILE CHECKSUM: fea167f1f2a68d89aa3b4b78999606b7aeed27ca
 
-COCOAPODS: 1.2.0.beta.3
+COCOAPODS: 1.2.0
