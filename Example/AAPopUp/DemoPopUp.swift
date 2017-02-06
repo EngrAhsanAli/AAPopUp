@@ -20,11 +20,18 @@ class DemoPopUp: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        demoLabel.text = "Demo Label"
-        demoTextField.text = "Demo TextField"
-        demoTextView.text = "Demo TextView"
+        
+        setBorder(demoTextView)
+        setBorder(demoTextField)
+        
+        
     }
     
+    
+    func setBorder(_ view: UIView) {
+        view.layer.borderWidth = 1
+        view.layer.borderColor = UIColor(red:222/255.0, green:225/255.0, blue:227/255.0, alpha: 1.0).cgColor
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -33,7 +40,7 @@ class DemoPopUp: UIViewController {
     
     @IBAction func demoButtonAction(_ sender: Any) {
         
-        let alert = UIAlertView(title: "Alert", message: "Simple alert over AAPopUp!", delegate: nil, cancelButtonTitle: "OK")
+        let alert = UIAlertView(title: "Alert", message: "Thanks for submitting your feedback!", delegate: nil, cancelButtonTitle: "OK")
         alert.performSelector(onMainThread: #selector(alert.show), with: nil, waitUntilDone: false)
     }
  
