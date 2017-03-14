@@ -105,7 +105,7 @@ github "EngrAhsanAli/AAPopUp" "master"
 ```
 
 Then import the library in all files where you use it:
-```ruby
+```swift
 import AAPopUp
 ```
 
@@ -126,7 +126,7 @@ If you prefer not to use either of the above mentioned dependency managers, you 
 
 ##Define Global Options:
 
-```ruby
+```swift
 let options = AAPopUp.globalOptions
 options.storyboardName = "Main"
 options.dismissTag = 9
@@ -143,7 +143,7 @@ options.backgroundColor = UIColor.black.withAlphaComponent(0.7)
 You can define your popups view controllers with their respective identifiers as follow:
 
 
-```ruby
+```swift
 
 extension AAPopUp {
 
@@ -164,7 +164,7 @@ Note that you storyboard name is optional, you can define in `GlobalOptions`.
 
 You can just call the `AAPopUp` constructor by passing your view controller based popup as follow:
 
-```ruby
+```swift
 var popup: AAPopUp = AAPopUp(popup: .demo2)
 ```
 
@@ -175,7 +175,7 @@ var popup: AAPopUp = AAPopUp(popup: .demo2)
 
 You can access your `UILabel`, `UIButton` etc simply by using `viewWithTag` function as follow:
 
-```ruby
+```swift
 let label = popup.viewWithTag(10) as! UILabel
 label.text = “Label Text“
 ```
@@ -187,7 +187,7 @@ label.text = “Label Text“
 
 ##Present your popup
 
-```
+```swift
 popup.present { popup in
 // MARK:- View Did Appear Here
 popup.dismissWithTag(9)   
@@ -201,20 +201,20 @@ popup.dismissWithTag(9)
 ##Helper functions
 
 You can dismiss your constructed popup by just calling the following method:
-```ruby
+```swift
 func dismissPopUpView(completion: (() -> ())? = nil)
 ```
 
 
 You can get any view by its tag defined in storyboard by just calling the following method:
 
-```ruby
+```swift
 func viewWithTag(_ tag: Int) -> UIView?
 ```
 
 You can set default action to a UIButton to dissmiss by calling the following method:
 
-```ruby
+```swift
 func dismissWithTag(_ tag: Int?)
 ```
 
