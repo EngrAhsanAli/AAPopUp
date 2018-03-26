@@ -29,14 +29,14 @@ extension AAPopUp {
     
     /// register notificaitons for keyboard
     func registerKeyboardNotifications() {
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidChange(notification:)), name:NSNotification.Name.UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidChange(notification:)), name:NSNotification.Name.UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidChange(_:)), name:NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidChange(_:)), name:NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
     
     /// Keyboard selector for changes
     ///
     /// - Parameter notification: NSNotification
-    @objc func keyboardDidChange(notification: NSNotification) {
+    @objc func keyboardDidChange(_ notification: NSNotification) {
         
         let info = notification.userInfo!
         let keyboardHeight:CGFloat = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue.size.height

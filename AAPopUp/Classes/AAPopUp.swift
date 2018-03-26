@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class AAPopUp: UIViewController {
+@objcMembers open class AAPopUp: UIViewController {
     
     /// Global options
     open static var options = AAPopUpOptions()
