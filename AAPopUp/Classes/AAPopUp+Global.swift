@@ -36,7 +36,7 @@ extension AAPopUp {
     /// Keyboard selector for changes
     ///
     /// - Parameter notification: NSNotification
-    func keyboardDidChange(notification: NSNotification) {
+    @objc func keyboardDidChange(notification: NSNotification) {
         
         let info = notification.userInfo!
         let keyboardHeight:CGFloat = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue.size.height

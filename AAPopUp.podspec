@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = 'AAPopUp'
-s.version          = '0.1.0'
+s.version          = '0.1.2'
 s.summary          = 'AAPopUp is a simple & easy-to-use popup designed to present customizable storyboard based view controller modal alert, written in Swift.'
 
 s.description      = <<-DESC
@@ -13,7 +13,7 @@ s.license          = { :type => 'MIT', :file => 'LICENSE' }
 s.author           = { 'Engr. Ahsan Ali' => 'hafiz.m.ahsan.ali@gmail.com' }
 s.source           = { :git => 'https://github.com/EngrAhsanAli/AAPopUp.git', :tag => s.version.to_s }
 
-s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
+s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
 
 s.ios.deployment_target = '8.0'
 

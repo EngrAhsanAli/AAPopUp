@@ -8,14 +8,12 @@
 
 import AAPopUp
 
-
-extension AAPopUp {
-    
-    // MARK:- Add your popups here
-    
-    static let demo1 = AAPopUps<String? ,String>(identifier: "DemoPopup")
-    static let demo2 = AAPopUps<String? ,String>("Main" ,identifier: "DemoPopup")
-
-    
-    
+/// Get view controller from given AAPopUps object
+///
+/// - Parameter popup: AAPopUps object
+/// - Returns: UIViewController
+func getViewController(_ storyboard: String, id: String) -> UIViewController {
+    let storyboard: UIStoryboard = UIStoryboard(name: storyboard, bundle: nil)
+    return storyboard.instantiateViewController(withIdentifier: id)
 }
+

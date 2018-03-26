@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         
-        let options = AAPopUp.globalOptions
+        let options = AAPopUp.options
         options.storyboardName = "Main"
         options.dismissTag = 9
         

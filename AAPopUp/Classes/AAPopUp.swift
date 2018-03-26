@@ -11,45 +11,33 @@ import UIKit
 open class AAPopUp: UIViewController {
     
     /// Global options
-    open static var globalOptions = AAPopUpOptions()
-    
-    /// Local options
-    var options: AAPopUpOptions!
+    open static var options = AAPopUpOptions()
 
     /// Popup View controller
-    var viewController: UIViewController!
+    open var viewController: UIViewController!
+    
+    /// Absolute Height
+    open var absoluteHeight: CGFloat? {
+        didSet {
+            guard let height = absoluteHeight else {
+                return
+            }
+            viewController.view.bounds.size.height = height
+        }
+    }
     
     /// Keyboard visibility flag
     var keyboardIsVisible = false
-    
-    /// Init with AAPopUps object with options
-    ///
-    /// - Parameters:
-    ///   - popup: AAPopUps object
-    ///   - options: AAPopUpOptions (optional)
-    public convenience init(popup: AAPopUps<String?, String>,
-                            withOptions options: AAPopUpOptions? = nil) {
-        
-        self.init()
-        
-        self.viewController = getViewController(popup)
-        initOptions(options)
-        
-        initPopUp()
-        
-    }
     
     /// Init with UIViewController of AAPopUp with options
     ///
     /// - Parameters:
     ///   - popup: UIViewController of popup
     ///   - options: AAPopUpOptions (optional)
-    public convenience init(popup: UIViewController,
+    public convenience init(_ popup: UIViewController,
                             withOptions options: AAPopUpOptions? = nil) {
         self.init()
         self.viewController = popup
-        
-        initOptions(options)
         initPopUp()
         
     }
@@ -73,7 +61,7 @@ open class AAPopUp: UIViewController {
         super.viewDidAppear(animated)
         
         presentPopUpView()
-        dismissWithTag(options.dismissTag)
+        dismissWithTag(AAPopUp.options.dismissTag)
         
     }
     
@@ -87,29 +75,15 @@ open class AAPopUp: UIViewController {
         
     }
 
-    /// init with options if available
-    ///
-    /// - Parameter options: options object AAPopUpOptions
-    func initOptions(_ options: AAPopUpOptions?) {
-        if let option = options {
-            self.options = option
-        }
-        else {
-            self.options = AAPopUp.globalOptions
-        }
-    }
-    
-    
     /// Create Popupup view
     func initPopUp() {
         
-        let contentView = viewController.view.subviews.first!.bounds
-        viewController.view.bounds = contentView
-        
-        guard !contentView.isEmpty else {
-            fatalError("AAPopUp - All child views must be encapsulate in a single UIView instace. Aborting ...")
+        guard let contentView = viewController.view.subviews.first?.bounds, !contentView.isEmpty else {
+            print("AAPopUp - All child views must be encapsulate in a single UIView instace. Aborting ...")
+            return
         }
         
+        viewController.view.bounds = contentView
         if #available(iOS 9.0, *) {
             self.loadViewIfNeeded()
         }
@@ -132,7 +106,7 @@ open class AAPopUp: UIViewController {
         viewController.didMove(toParentViewController: self)
         
         modalPresentationStyle = .overFullScreen
-        viewController.view.layer.cornerRadius = options.cornerRadius
+        viewController.view.layer.cornerRadius = AAPopUp.options.cornerRadius
         viewController.view.layer.masksToBounds = true
         
         togglePopup() // First Invisible Animaiton
@@ -146,7 +120,7 @@ open class AAPopUp: UIViewController {
     func togglePopup(_ show: Bool = false) {
 
         var alpha: CGFloat = 1.0
-        var backgroundColor: UIColor = options.backgroundColor
+        var backgroundColor: UIColor = AAPopUp.options.backgroundColor
         var transform: CGAffineTransform = .identity
         
         if !show {
@@ -190,14 +164,14 @@ extension AAPopUp {
     }
     
     /// dismiss popup selector
-    func dismissPopup() {
+    @objc func dismissPopup() {
         dismissPopUpView()
     }
 
     /// present popup with completion
     ///
     /// - Parameter completion: view did load closure
-    open func present(completion: ((_ popup: AAPopUp) -> ())?) {
+    open func present(_ completion: ((_ popup: AAPopUp) -> ())? = nil) {
         
         guard let root = UIApplication.shared.keyWindow?.rootViewController else {
             fatalError("AAPopUp - Application key window not found. Please check UIWindow in AppDelegate.")
@@ -211,7 +185,7 @@ extension AAPopUp {
     
     /// present popup view with animation
     func presentPopUpView() {
-        UIView.animate(withDuration: options.animationDuration, delay: 0, animations: {() -> Void in
+        UIView.animate(withDuration: AAPopUp.options.animationDuration, delay: 0, animations: {() -> Void in
             self.togglePopup(true)
         }, completion: nil)
     }
@@ -221,8 +195,8 @@ extension AAPopUp {
     /// Dismiss popup with animation
     ///
     /// - Parameter completion: completion closure
-    open func dismissPopUpView(completion: (() -> ())? = nil) {
-        UIView.animate(withDuration: options.animationDuration, animations: {() -> Void in
+    open func dismissPopUpView(_ completion: (() -> ())? = nil) {
+        UIView.animate(withDuration: AAPopUp.options.animationDuration, animations: {() -> Void in
             self.togglePopup()
         }, completion: {(finished: Bool) -> Void in
             

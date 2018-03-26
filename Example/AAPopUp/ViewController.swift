@@ -10,9 +10,8 @@ import UIKit
 import AAPopUp
 
 class ViewController: UIViewController {
-
-    
-    var popup: AAPopUp = AAPopUp(popup: .demo2)
+ 
+    let popup: AAPopUp = AAPopUp(getViewController("Main", id: "DemoPopup"))
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +19,15 @@ class ViewController: UIViewController {
         
         
         // MARK:- View Did Load Here
+        
+//        popup.absoluteHeight = 500
+        
+        
+        let dynamicLabel = UILabel()
+        dynamicLabel.text = "Dynamic Label"
+        dynamicLabel.sizeToFit()
+        
+        popup.viewController.view.addSubview(dynamicLabel)
         
         let label = popup.viewWithTag(10) as! UILabel
         label.text = "Welcome to AAPopUp!"

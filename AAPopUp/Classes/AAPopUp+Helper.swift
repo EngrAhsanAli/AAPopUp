@@ -36,30 +36,3 @@ open class AAPopUpOptions: NSObject {
     open var backgroundColor = UIColor.black.withAlphaComponent(0.7)
 
 }
-
-
-
-// MARK: - AAPopUp helper
-extension AAPopUp {
-    
-    /// Get view controller from given AAPopUps object
-    ///
-    /// - Parameter popup: AAPopUps object
-    /// - Returns: UIViewController
-    func getViewController(_ popup: AAPopUps<String?, String>) -> UIViewController {
-        
-        var storyboard_id: String!
-        if let storyboard = popup._storyboard {
-            storyboard_id = storyboard
-        }
-        else if let storyboard = options.storyboardName {
-            storyboard_id = storyboard
-        }
-        else {
-            fatalError("AAPopUp - Invalid Storyboard name. Aborting ...")
-        }
-        
-        let storyboard: UIStoryboard = UIStoryboard(name: storyboard_id, bundle: nil)
-        return storyboard.instantiateViewController(withIdentifier: popup._id)
-    }
-}
