@@ -79,6 +79,9 @@ use_frameworks!
 
 target '<Your Target Name>' do
 pod 'AAPopUp'
+// Latest (Swift 4)
+  pod 'AAPopUp', :git => 'https://github.com/EngrAhsanAli/AAPopUp.git', :branch => 'master'
+
 end
 
 ```
@@ -165,7 +168,7 @@ Note that you storyboard name is optional, you can define in `GlobalOptions`.
 You can just call the `AAPopUp` constructor by passing your view controller based popup as follow:
 
 ```swift
-var popup: AAPopUp = AAPopUp(popup: .demo2)
+var popup: AAPopUp = AAPopUp(popup: <View Controller>)
 ```
 
 
