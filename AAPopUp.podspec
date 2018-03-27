@@ -16,7 +16,6 @@ s.source           = { :git => 'https://github.com/EngrAhsanAli/AAPopUp.git', :t
 s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
 
 s.ios.deployment_target = '8.0'
-s.swift_version = '4.0'
 s.source_files = 'AAPopUp/Classes/**/*'
 
 
