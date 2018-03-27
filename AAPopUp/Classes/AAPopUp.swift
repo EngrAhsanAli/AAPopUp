@@ -77,16 +77,14 @@ import UIKit
 
     /// Create Popupup view
     func initPopUp() {
-        
-        guard let contentView = viewController.view.subviews.first?.bounds, !contentView.isEmpty else {
-            print("AAPopUp - All child views must be encapsulate in a single UIView instace. Aborting ...")
+        guard setContentBounds() else {
             return
         }
         
-        viewController.view.bounds = contentView
         if #available(iOS 9.0, *) {
             self.loadViewIfNeeded()
         }
+        
         
         let scrollView = UIScrollView(frame: self.view.bounds)
         scrollView.contentSize = view.bounds.size
@@ -97,21 +95,38 @@ import UIKit
         view.addSubview(scrollView)
         scrollView.bindWithBounds()
         
-        
         let scrollContentView = UIView(frame: scrollView.bounds)
         scrollView.addSubview(scrollContentView)
         
         self.addChildViewController(viewController)
         scrollContentView.addSubview(viewController.view!)
+        
         viewController.didMove(toParentViewController: self)
         
         modalPresentationStyle = .overFullScreen
         viewController.view.layer.cornerRadius = AAPopUp.options.cornerRadius
         viewController.view.layer.masksToBounds = true
-        
+        viewController.view.backgroundColor = .clear
         togglePopup() // First Invisible Animaiton
     }
     
+    /// Set ContentView Bounds
+    ///
+    /// - Parameter: bounds
+    func setContentBounds(_ bounds: CGRect? = nil) -> Bool {
+        if let customBounds = bounds {
+            viewController.view.bounds = customBounds
+        }
+        else {
+            guard let contentView = viewController.view.subviews.first?.bounds else {
+                print("AAPopUp - All child views must be encapsulate in a single UIView instace. Aborting ...")
+                return false
+            }
+            viewController.view.bounds = contentView
+        }
+        
+        return true
+    }
 
     
     /// toggle the popup
@@ -171,11 +186,13 @@ extension AAPopUp {
     /// present popup with completion
     ///
     /// - Parameter completion: view did load closure
-    open func present(_ completion: ((_ popup: AAPopUp) -> ())? = nil) {
+    open func present(_ bounds: CGRect? = nil, completion: ((_ popup: AAPopUp) -> ())? = nil) {
         
         guard let root = UIApplication.shared.keyWindow?.rootViewController else {
             fatalError("AAPopUp - Application key window not found. Please check UIWindow in AppDelegate.")
         }
+        
+        _ = setContentBounds(bounds)
         
         root.present(self, animated: false, completion: {
             completion?(self)

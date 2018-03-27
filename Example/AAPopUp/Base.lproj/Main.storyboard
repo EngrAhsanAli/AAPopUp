@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="FRA-Ge-Yc6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="FRA-Ge-Yc6">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="EuphemiaCAS.ttc">
+            <string>EuphemiaUCAS-Bold</string>
+        </array>
+        <array key="Futura.ttc">
+            <string>Futura-Medium</string>
+        </array>
+        <array key="MarkerFeltWide.ttf">
+            <string>MarkerFelt-Wide</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--AAPopUp-->
         <scene sceneID="ufC-wZ-h7g">
@@ -65,21 +76,8 @@
                             <view tag="999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ytD-XD-ufY">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
                                 <subviews>
-                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hI-qb-zBG">
-                                        <rect key="frame" x="282" y="8" width="30" height="26"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="26" id="4gL-Rb-23n"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
-                                        <state key="normal" title="x">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="closeAction:" destination="HOr-8y-t16" eventType="touchUpInside" id="mFB-2W-mDg"/>
-                                        </connections>
-                                    </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type your name here ...." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DhJ-go-R0X">
-                                        <rect key="frame" x="8" y="66" width="304" height="40"/>
+                                        <rect key="frame" x="0.0" y="66" width="320" height="40"/>
                                         <color key="backgroundColor" red="0.48005046330000001" green="0.57879851650000003" blue="0.63342811379999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="ALQ-Me-7cx"/>
@@ -89,7 +87,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7jx-G5-Rdz">
-                                        <rect key="frame" x="8" y="109" width="304" height="135"/>
+                                        <rect key="frame" x="0.0" y="109" width="320" height="135"/>
                                         <color key="backgroundColor" red="0.48005046330000001" green="0.57879851650000003" blue="0.63342811379999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <string key="text">Type your comments about AAPopUp Cocoapods framework. Hit like to my official repo at https://github.com/engrahsanali 
 I would love to know if you are using AAPopUp in your app, send an email to hafiz.m.ahsan.ali@gmail.com</string>
@@ -98,7 +96,7 @@ I would love to know if you are using AAPopUp in your app, send an email to hafi
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEr-S6-ape">
-                                        <rect key="frame" x="8" y="252" width="304" height="40"/>
+                                        <rect key="frame" x="0.0" y="252" width="320" height="40"/>
                                         <color key="backgroundColor" red="0.49092491110000003" green="0.63342811379999997" blue="0.52306139200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="Cqu-CK-2ao"/>
@@ -112,35 +110,48 @@ I would love to know if you are using AAPopUp in your app, send an email to hafi
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" tag="10" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to AAPopUp!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IxA-ue-oWf">
-                                        <rect key="frame" x="8" y="33" width="304" height="30"/>
+                                        <rect key="frame" x="0.0" y="28" width="320" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hI-qb-zBG">
+                                        <rect key="frame" x="290" y="0.0" width="30" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="4gL-Rb-23n"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
+                                        <state key="normal" title="x">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closeAction:" destination="HOr-8y-t16" eventType="touchUpInside" id="mFB-2W-mDg"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.63342811379999997" green="0.48465665949999998" blue="0.2802924155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="DhJ-go-R0X" firstAttribute="top" secondItem="5hI-qb-zBG" secondAttribute="bottom" constant="32" id="1YE-tC-PGF"/>
+                                    <constraint firstItem="DhJ-go-R0X" firstAttribute="top" secondItem="5hI-qb-zBG" secondAttribute="bottom" constant="40" id="1YE-tC-PGF"/>
                                     <constraint firstItem="7jx-G5-Rdz" firstAttribute="trailing" secondItem="nEr-S6-ape" secondAttribute="trailing" id="5yf-dp-NfI"/>
                                     <constraint firstAttribute="height" constant="300" id="6py-XU-pgf"/>
                                     <constraint firstItem="nEr-S6-ape" firstAttribute="top" secondItem="7jx-G5-Rdz" secondAttribute="bottom" constant="8" symbolic="YES" id="6xa-4u-DPu"/>
                                     <constraint firstItem="DhJ-go-R0X" firstAttribute="leading" secondItem="7jx-G5-Rdz" secondAttribute="leading" id="8w8-DZ-0hb"/>
                                     <constraint firstItem="IxA-ue-oWf" firstAttribute="leading" secondItem="DhJ-go-R0X" secondAttribute="leading" id="97d-Fo-Shh"/>
-                                    <constraint firstItem="IxA-ue-oWf" firstAttribute="leading" secondItem="ytD-XD-ufY" secondAttribute="leadingMargin" id="BbA-Bq-i5Q"/>
-                                    <constraint firstItem="5hI-qb-zBG" firstAttribute="trailing" secondItem="ytD-XD-ufY" secondAttribute="trailingMargin" id="BpQ-EL-bw5"/>
+                                    <constraint firstItem="IxA-ue-oWf" firstAttribute="leading" secondItem="ytD-XD-ufY" secondAttribute="leadingMargin" constant="-8" id="BbA-Bq-i5Q"/>
+                                    <constraint firstItem="5hI-qb-zBG" firstAttribute="trailing" secondItem="ytD-XD-ufY" secondAttribute="trailingMargin" constant="8" id="BpQ-EL-bw5"/>
                                     <constraint firstItem="nEr-S6-ape" firstAttribute="bottom" secondItem="ytD-XD-ufY" secondAttribute="bottomMargin" id="DGN-Fe-6Yk"/>
                                     <constraint firstItem="IxA-ue-oWf" firstAttribute="trailing" secondItem="DhJ-go-R0X" secondAttribute="trailing" id="KVz-cY-MAa"/>
                                     <constraint firstItem="5hI-qb-zBG" firstAttribute="trailing" secondItem="IxA-ue-oWf" secondAttribute="trailing" id="QOD-nf-pLe"/>
                                     <constraint firstItem="7jx-G5-Rdz" firstAttribute="top" secondItem="DhJ-go-R0X" secondAttribute="bottom" constant="3" id="RfG-A2-Orf"/>
                                     <constraint firstItem="7jx-G5-Rdz" firstAttribute="leading" secondItem="nEr-S6-ape" secondAttribute="leading" id="dsS-rA-6HQ"/>
-                                    <constraint firstItem="IxA-ue-oWf" firstAttribute="top" secondItem="ytD-XD-ufY" secondAttribute="top" constant="33" id="f6X-54-gdU"/>
-                                    <constraint firstItem="5hI-qb-zBG" firstAttribute="top" secondItem="ytD-XD-ufY" secondAttribute="topMargin" id="qo5-eu-C4r"/>
+                                    <constraint firstItem="IxA-ue-oWf" firstAttribute="top" secondItem="ytD-XD-ufY" secondAttribute="top" constant="28" id="f6X-54-gdU"/>
+                                    <constraint firstItem="5hI-qb-zBG" firstAttribute="top" secondItem="ytD-XD-ufY" secondAttribute="topMargin" constant="-8" id="qo5-eu-C4r"/>
                                     <constraint firstItem="DhJ-go-R0X" firstAttribute="trailing" secondItem="7jx-G5-Rdz" secondAttribute="trailing" id="vI8-Mp-nWa"/>
-                                    <constraint firstItem="DhJ-go-R0X" firstAttribute="top" secondItem="IxA-ue-oWf" secondAttribute="bottom" constant="3" id="yO5-ll-tib"/>
+                                    <constraint firstItem="DhJ-go-R0X" firstAttribute="top" secondItem="IxA-ue-oWf" secondAttribute="bottom" constant="8" id="yO5-ll-tib"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="ytD-XD-ufY" secondAttribute="trailing" id="AoS-FF-Hpc"/>
                             <constraint firstItem="ytD-XD-ufY" firstAttribute="leading" secondItem="khJ-0q-in9" secondAttribute="leading" id="bNB-7X-Apd"/>
@@ -166,7 +177,7 @@ I would love to know if you are using AAPopUp in your app, send an email to hafi
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FRA-Ge-Yc6" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NcY-VS-xvB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

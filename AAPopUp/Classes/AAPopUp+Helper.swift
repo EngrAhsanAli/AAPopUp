@@ -29,7 +29,6 @@ open class AAPopUps<S, V>: AAPopUp {
 /// AAPopUp options
 open class AAPopUpOptions: NSObject {
     
-    open var storyboardName: String?
     open var dismissTag: Int?
     open var cornerRadius: CGFloat = 4.0
     open var animationDuration = 0.2
