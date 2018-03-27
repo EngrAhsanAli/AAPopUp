@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		25B77039782144DB8976B1F02FDB9E9A /* Pods-AAPopUp_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 883C518157F37E52B27224CEFF39942B /* Pods-AAPopUp_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2F7E3EB9C1294DB9C7AF38C8E8EB9B75 /* Pods-AAPopUp_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 646107B5F9038E72B5CF111EF84E86C1 /* Pods-AAPopUp_Example-dummy.m */; };
-		3F9ADFA330567B87889D127D2BF9C7F4 /* AAPopUp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F688470933C1D2E04F66248972E0717 /* AAPopUp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42AEAE381E4911CF00B07F51 /* AAPopUp+Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AEAE371E4911CF00B07F51 /* AAPopUp+Global.swift */; };
-		5859160DB2F071AA867FA9A91CB9BE70 /* AAPopUp+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B240EAD1412AE717FD9C47744F03BB17 /* AAPopUp+Helper.swift */; };
-		90E0429ED8ABCCCDC9F319E7CBA439FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		A5C76EFA0A6B0EA46EF5A20296640594 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		DB28909B659653B3065021451945B199 /* AAPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF1BC1FFA6F0E6155B4BE319C436613 /* AAPopUp.swift */; };
-		F98BFCEFA67F4004B4F038ED3C34CF8A /* AAPopUp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0F7A455105ED8D5D54F2AC50CF2775 /* AAPopUp-dummy.m */; };
+		25B77039782144DB8976B1F02FDB9E9A /* Pods-AAPopUp_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 93CE1D55170FF0E3300EB75B771DB530 /* Pods-AAPopUp_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D2A079516556AEECC51CDCECAFF1F55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		2F7E3EB9C1294DB9C7AF38C8E8EB9B75 /* Pods-AAPopUp_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2D9588A5A0B5F7B6AAB09B21D04508 /* Pods-AAPopUp_Example-dummy.m */; };
+		438DDD2A4ED5F658F0DCBEC7DF1808A4 /* AAPopUp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DE0EC6F5E29FB671D0299CB467DF26 /* AAPopUp-dummy.m */; };
+		7272CFB8F3A0F4FE8A018FC2843239BD /* AAPopUp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AEDDE1AE6EE3D4D724786D5C52F11873 /* AAPopUp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86F220B786A5E58F158ADD5C3479CCE1 /* AAPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CC23AF4928136F3E42B5468B32FF38 /* AAPopUp.swift */; };
+		90C47D88F87893C128EF024521EF65CF /* AAPopUp+Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9C74A719C702266987BC1F31D3E04A /* AAPopUp+Global.swift */; };
+		BD18AE13ACEA7E5DC7B9C0B26CD5E422 /* AAPopUp+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C45F536141AF8AF83B77519A838DBE1 /* AAPopUp+Helper.swift */; };
+		E6DC68583E654403324CB7AD581E55A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,63 +23,68 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 414BBCA1F5A6917BF933F1CAA785611D;
+			remoteGlobalIDString = FD213970B2A1880EBDFAF8B48C89814E;
 			remoteInfo = AAPopUp;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		021C36B9E5FBBB9BE55FB14C5F870B87 /* AAPopUp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AAPopUp.modulemap; sourceTree = "<group>"; };
-		0EFC9D1C4497C9BFC5C1AB65F505D836 /* AAPopUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AAPopUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		209686869649719F770961EA6DACFFC7 /* AAPopUp-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AAPopUp-prefix.pch"; sourceTree = "<group>"; };
-		2B0F7A455105ED8D5D54F2AC50CF2775 /* AAPopUp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AAPopUp-dummy.m"; sourceTree = "<group>"; };
-		2FF1BC1FFA6F0E6155B4BE319C436613 /* AAPopUp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AAPopUp.swift; sourceTree = "<group>"; };
-		3F688470933C1D2E04F66248972E0717 /* AAPopUp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AAPopUp-umbrella.h"; sourceTree = "<group>"; };
-		42AEAE371E4911CF00B07F51 /* AAPopUp+Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AAPopUp+Global.swift"; sourceTree = "<group>"; };
-		49133BF296B163BF6E4FD1C8A94DF0BA /* Pods-AAPopUp_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AAPopUp_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5F0C47C68D4EFED0681D3185B5F3BF5B /* Pods-AAPopUp_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AAPopUp_Example-resources.sh"; sourceTree = "<group>"; };
-		646107B5F9038E72B5CF111EF84E86C1 /* Pods-AAPopUp_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AAPopUp_Example-dummy.m"; sourceTree = "<group>"; };
-		876224CA0582A7D315F9BF7320CF8119 /* AAPopUp.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AAPopUp.xcconfig; sourceTree = "<group>"; };
-		883C518157F37E52B27224CEFF39942B /* Pods-AAPopUp_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AAPopUp_Example-umbrella.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A6293981E68269E684369B94E3A9F2ED /* Pods_AAPopUp_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AAPopUp_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A75D50F18F73464292D3B591898EAA9D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A97DFFC0DD6B9E222B5ABF4A75C08DCA /* Pods-AAPopUp_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AAPopUp_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		B240EAD1412AE717FD9C47744F03BB17 /* AAPopUp+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "AAPopUp+Helper.swift"; sourceTree = "<group>"; };
-		B295A729C276FE654E706BE3624CDF3F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B396E1434DC110004844142898B0EC45 /* Pods-AAPopUp_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AAPopUp_Example-frameworks.sh"; sourceTree = "<group>"; };
-		C786652D5D099CA86C43D92744310528 /* Pods-AAPopUp_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AAPopUp_Example.release.xcconfig"; sourceTree = "<group>"; };
-		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DD341199958D80102060C7D8C796A7BF /* Pods-AAPopUp_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AAPopUp_Example.modulemap"; sourceTree = "<group>"; };
-		E7FCE87BCD6CACE5BFE87901F5227679 /* Pods-AAPopUp_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AAPopUp_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		0EFC9D1C4497C9BFC5C1AB65F505D836 /* AAPopUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AAPopUp.framework; path = AAPopUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C07C2CE05E4C80976BF345AC644C104 /* Pods-AAPopUp_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AAPopUp_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		25DE0EC6F5E29FB671D0299CB467DF26 /* AAPopUp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AAPopUp-dummy.m"; sourceTree = "<group>"; };
+		2B9C74A719C702266987BC1F31D3E04A /* AAPopUp+Global.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AAPopUp+Global.swift"; path = "AAPopUp/Classes/AAPopUp+Global.swift"; sourceTree = "<group>"; };
+		2DC82D231BD8374AEE8221A077DB52CA /* AAPopUp.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AAPopUp.xcconfig; sourceTree = "<group>"; };
+		2DD6E47A311427BB49772E426E97931A /* AAPopUp.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = AAPopUp.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2E2D9588A5A0B5F7B6AAB09B21D04508 /* Pods-AAPopUp_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AAPopUp_Example-dummy.m"; sourceTree = "<group>"; };
+		3330E36CCC6B6AF97B2B38B46D217A0E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C45F536141AF8AF83B77519A838DBE1 /* AAPopUp+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AAPopUp+Helper.swift"; path = "AAPopUp/Classes/AAPopUp+Helper.swift"; sourceTree = "<group>"; };
+		4F5F24C9A68FD69A7B29FD2F12FC69FE /* AAPopUp-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AAPopUp-prefix.pch"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		84CC23AF4928136F3E42B5468B32FF38 /* AAPopUp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AAPopUp.swift; path = AAPopUp/Classes/AAPopUp.swift; sourceTree = "<group>"; };
+		865913E5925731E81A8567F5C37F66E3 /* Pods-AAPopUp_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AAPopUp_Example-resources.sh"; sourceTree = "<group>"; };
+		897D36464EDB3F588124B23D2171CC0F /* Pods-AAPopUp_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AAPopUp_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		8CF32A7A909B4C547149DE342F7A4A3B /* Pods-AAPopUp_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AAPopUp_Example.release.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93CE1D55170FF0E3300EB75B771DB530 /* Pods-AAPopUp_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AAPopUp_Example-umbrella.h"; sourceTree = "<group>"; };
+		A6293981E68269E684369B94E3A9F2ED /* Pods_AAPopUp_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AAPopUp_Example.framework; path = "Pods-AAPopUp_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEDDE1AE6EE3D4D724786D5C52F11873 /* AAPopUp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AAPopUp-umbrella.h"; sourceTree = "<group>"; };
+		C1AB55CF35A70E7C1327FFA2F0A0454D /* Pods-AAPopUp_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AAPopUp_Example-frameworks.sh"; sourceTree = "<group>"; };
+		C24A5694D8774082FBE864CA5BB23B6D /* Pods-AAPopUp_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AAPopUp_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C55D7DF3B39C5D1BD52375424751F287 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD95A07074CC97D2EC532FDAF7EB227B /* Pods-AAPopUp_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AAPopUp_Example.modulemap"; sourceTree = "<group>"; };
+		D72DE5518F5387F8A47F4A7718F498DF /* AAPopUp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AAPopUp.modulemap; sourceTree = "<group>"; };
+		DE16AF082E27B55DB68F7022D5D44F64 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		FA21DA685DB3614AFA415B948B0F9442 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		27F8FBD3BF24549CC0D12777942C8386 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6DC68583E654403324CB7AD581E55A0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A693A078CB2FDA19377965972DEB5D35 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5C76EFA0A6B0EA46EF5A20296640594 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BC18B49295ED1841D2E1ED2BD206184A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				90E0429ED8ABCCCDC9F319E7CBA439FE /* Foundation.framework in Frameworks */,
+				2D2A079516556AEECC51CDCECAFF1F55 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		08633CA5779C483AB9DF171AD2310EE4 /* Development Pods */ = {
+		09C1D231B372A764BF43F4737D4E348B /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				DF27AB9B0EB85FE57D6C99158E8E76DE /* AAPopUp */,
+				2DD6E47A311427BB49772E426E97931A /* AAPopUp.podspec */,
+				DE16AF082E27B55DB68F7022D5D44F64 /* LICENSE */,
+				FA21DA685DB3614AFA415B948B0F9442 /* README.md */,
 			);
-			name = "Development Pods";
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		1F2459D7C2DA4239945FA2869DBE9505 /* Products */ = {
@@ -91,88 +96,63 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		29AAB9441BAA8BD738B789105602433D /* Pods-AAPopUp_Example */ = {
+		3AF6F47B28C7352A88D06A7180F1D060 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B295A729C276FE654E706BE3624CDF3F /* Info.plist */,
-				DD341199958D80102060C7D8C796A7BF /* Pods-AAPopUp_Example.modulemap */,
-				49133BF296B163BF6E4FD1C8A94DF0BA /* Pods-AAPopUp_Example-acknowledgements.markdown */,
-				A97DFFC0DD6B9E222B5ABF4A75C08DCA /* Pods-AAPopUp_Example-acknowledgements.plist */,
-				646107B5F9038E72B5CF111EF84E86C1 /* Pods-AAPopUp_Example-dummy.m */,
-				B396E1434DC110004844142898B0EC45 /* Pods-AAPopUp_Example-frameworks.sh */,
-				5F0C47C68D4EFED0681D3185B5F3BF5B /* Pods-AAPopUp_Example-resources.sh */,
-				883C518157F37E52B27224CEFF39942B /* Pods-AAPopUp_Example-umbrella.h */,
-				E7FCE87BCD6CACE5BFE87901F5227679 /* Pods-AAPopUp_Example.debug.xcconfig */,
-				C786652D5D099CA86C43D92744310528 /* Pods-AAPopUp_Example.release.xcconfig */,
+				E156102A56C47DFAF1B79B4EDF4BD118 /* AAPopUp */,
 			);
-			name = "Pods-AAPopUp_Example";
-			path = "Target Support Files/Pods-AAPopUp_Example";
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		3377FE0EA7918FAAE0E670202DB055F5 /* AAPopUp */ = {
+		46D00E6A4B7568DD503C260386ACF23D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B2669E6A9F35BDECBAE385839CA6F409 /* Classes */,
-			);
-			path = AAPopUp;
-			sourceTree = "<group>";
-		};
-		670445217C6AE75EDAC9AF3E15972CBD /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				021C36B9E5FBBB9BE55FB14C5F870B87 /* AAPopUp.modulemap */,
-				876224CA0582A7D315F9BF7320CF8119 /* AAPopUp.xcconfig */,
-				2B0F7A455105ED8D5D54F2AC50CF2775 /* AAPopUp-dummy.m */,
-				209686869649719F770961EA6DACFFC7 /* AAPopUp-prefix.pch */,
-				3F688470933C1D2E04F66248972E0717 /* AAPopUp-umbrella.h */,
-				A75D50F18F73464292D3B591898EAA9D /* Info.plist */,
+				D72DE5518F5387F8A47F4A7718F498DF /* AAPopUp.modulemap */,
+				2DC82D231BD8374AEE8221A077DB52CA /* AAPopUp.xcconfig */,
+				25DE0EC6F5E29FB671D0299CB467DF26 /* AAPopUp-dummy.m */,
+				4F5F24C9A68FD69A7B29FD2F12FC69FE /* AAPopUp-prefix.pch */,
+				AEDDE1AE6EE3D4D724786D5C52F11873 /* AAPopUp-umbrella.h */,
+				C55D7DF3B39C5D1BD52375424751F287 /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/AAPopUp";
-			sourceTree = "<group>";
-		};
-		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				08633CA5779C483AB9DF171AD2310EE4 /* Development Pods */,
+				3AF6F47B28C7352A88D06A7180F1D060 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				1F2459D7C2DA4239945FA2869DBE9505 /* Products */,
 				FB4E55CDBB639A0C7E48B210BBB714B1 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		B2669E6A9F35BDECBAE385839CA6F409 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				2FF1BC1FFA6F0E6155B4BE319C436613 /* AAPopUp.swift */,
-				B240EAD1412AE717FD9C47744F03BB17 /* AAPopUp+Helper.swift */,
-				42AEAE371E4911CF00B07F51 /* AAPopUp+Global.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DF27AB9B0EB85FE57D6C99158E8E76DE /* AAPopUp */ = {
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				3377FE0EA7918FAAE0E670202DB055F5 /* AAPopUp */,
-				670445217C6AE75EDAC9AF3E15972CBD /* Support Files */,
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E156102A56C47DFAF1B79B4EDF4BD118 /* AAPopUp */ = {
+			isa = PBXGroup;
+			children = (
+				84CC23AF4928136F3E42B5468B32FF38 /* AAPopUp.swift */,
+				2B9C74A719C702266987BC1F31D3E04A /* AAPopUp+Global.swift */,
+				3C45F536141AF8AF83B77519A838DBE1 /* AAPopUp+Helper.swift */,
+				09C1D231B372A764BF43F4737D4E348B /* Pod */,
+				46D00E6A4B7568DD503C260386ACF23D /* Support Files */,
 			);
 			name = AAPopUp;
 			path = ../..;
@@ -181,9 +161,27 @@
 		FB4E55CDBB639A0C7E48B210BBB714B1 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				29AAB9441BAA8BD738B789105602433D /* Pods-AAPopUp_Example */,
+				FCF10DD454017A4DAB6F4A0CB0433379 /* Pods-AAPopUp_Example */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FCF10DD454017A4DAB6F4A0CB0433379 /* Pods-AAPopUp_Example */ = {
+			isa = PBXGroup;
+			children = (
+				3330E36CCC6B6AF97B2B38B46D217A0E /* Info.plist */,
+				CD95A07074CC97D2EC532FDAF7EB227B /* Pods-AAPopUp_Example.modulemap */,
+				C24A5694D8774082FBE864CA5BB23B6D /* Pods-AAPopUp_Example-acknowledgements.markdown */,
+				897D36464EDB3F588124B23D2171CC0F /* Pods-AAPopUp_Example-acknowledgements.plist */,
+				2E2D9588A5A0B5F7B6AAB09B21D04508 /* Pods-AAPopUp_Example-dummy.m */,
+				C1AB55CF35A70E7C1327FFA2F0A0454D /* Pods-AAPopUp_Example-frameworks.sh */,
+				865913E5925731E81A8567F5C37F66E3 /* Pods-AAPopUp_Example-resources.sh */,
+				93CE1D55170FF0E3300EB75B771DB530 /* Pods-AAPopUp_Example-umbrella.h */,
+				1C07C2CE05E4C80976BF345AC644C104 /* Pods-AAPopUp_Example.debug.xcconfig */,
+				8CF32A7A909B4C547149DE342F7A4A3B /* Pods-AAPopUp_Example.release.xcconfig */,
+			);
+			name = "Pods-AAPopUp_Example";
+			path = "Target Support Files/Pods-AAPopUp_Example";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,34 +195,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EECB560F070B626616D70DACC55E7DA6 /* Headers */ = {
+		FD6A4062FA485947157A402B711BC8C7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F9ADFA330567B87889D127D2BF9C7F4 /* AAPopUp-umbrella.h in Headers */,
+				7272CFB8F3A0F4FE8A018FC2843239BD /* AAPopUp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		414BBCA1F5A6917BF933F1CAA785611D /* AAPopUp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C642321131F2BFBA2080A087B6A2412F /* Build configuration list for PBXNativeTarget "AAPopUp" */;
-			buildPhases = (
-				11F20212DBD1BB16933D0907953BB9A7 /* Sources */,
-				BC18B49295ED1841D2E1ED2BD206184A /* Frameworks */,
-				EECB560F070B626616D70DACC55E7DA6 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AAPopUp;
-			productName = AAPopUp;
-			productReference = 0EFC9D1C4497C9BFC5C1AB65F505D836 /* AAPopUp.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		D4322462ACFD800A80E8EB9FC98F0EE1 /* Pods-AAPopUp_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DEC06F0199E19DAC9D78B96AF08734A9 /* Build configuration list for PBXNativeTarget "Pods-AAPopUp_Example" */;
@@ -243,14 +224,31 @@
 			productReference = A6293981E68269E684369B94E3A9F2ED /* Pods_AAPopUp_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		FD213970B2A1880EBDFAF8B48C89814E /* AAPopUp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DC2C0DC499A3840DF54CB765FF2E08A /* Build configuration list for PBXNativeTarget "AAPopUp" */;
+			buildPhases = (
+				47A133B83FCA7DDFEC030294E6D2C8A6 /* Sources */,
+				27F8FBD3BF24549CC0D12777942C8386 /* Frameworks */,
+				FD6A4062FA485947157A402B711BC8C7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AAPopUp;
+			productName = AAPopUp;
+			productReference = 0EFC9D1C4497C9BFC5C1AB65F505D836 /* AAPopUp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0920;
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -264,21 +262,21 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				414BBCA1F5A6917BF933F1CAA785611D /* AAPopUp */,
+				FD213970B2A1880EBDFAF8B48C89814E /* AAPopUp */,
 				D4322462ACFD800A80E8EB9FC98F0EE1 /* Pods-AAPopUp_Example */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		11F20212DBD1BB16933D0907953BB9A7 /* Sources */ = {
+		47A133B83FCA7DDFEC030294E6D2C8A6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5859160DB2F071AA867FA9A91CB9BE70 /* AAPopUp+Helper.swift in Sources */,
-				42AEAE381E4911CF00B07F51 /* AAPopUp+Global.swift in Sources */,
-				F98BFCEFA67F4004B4F038ED3C34CF8A /* AAPopUp-dummy.m in Sources */,
-				DB28909B659653B3065021451945B199 /* AAPopUp.swift in Sources */,
+				90C47D88F87893C128EF024521EF65CF /* AAPopUp+Global.swift in Sources */,
+				BD18AE13ACEA7E5DC7B9C0B26CD5E422 /* AAPopUp+Helper.swift in Sources */,
+				438DDD2A4ED5F658F0DCBEC7DF1808A4 /* AAPopUp-dummy.m in Sources */,
+				86F220B786A5E58F158ADD5C3479CCE1 /* AAPopUp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,41 +294,40 @@
 		C8493FF2911D022285C53350A6B39915 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AAPopUp;
-			target = 414BBCA1F5A6917BF933F1CAA785611D /* AAPopUp */;
+			target = FD213970B2A1880EBDFAF8B48C89814E /* AAPopUp */;
 			targetProxy = F5BE306EB3EB58F486CBA2946333F4A6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2B32F2104D37ED204D405C1865D1D428 /* Debug */ = {
+		25C59240703AE0B3F516668E6D694446 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7FCE87BCD6CACE5BFE87901F5227679 /* Pods-AAPopUp_Example.debug.xcconfig */;
+			baseConfigurationReference = 1C07C2CE05E4C80976BF345AC644C104 /* Pods-AAPopUp_Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-AAPopUp_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-AAPopUp_Example/Pods-AAPopUp_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_AAPopUp_Example;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -338,154 +335,80 @@
 			};
 			name = Debug;
 		};
-		490B6EBFAA20866FC9516C54F8A9D6BA /* Release */ = {
+		AB5119DE6DC6B6ACC9D0675EB467BDAD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 876224CA0582A7D315F9BF7320CF8119 /* AAPopUp.xcconfig */;
+			baseConfigurationReference = 8CF32A7A909B4C547149DE342F7A4A3B /* Pods-AAPopUp_Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AAPopUp/AAPopUp-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AAPopUp/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-AAPopUp_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AAPopUp/AAPopUp.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = AAPopUp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		746CF1F52447B9B3A41A070E27F964B7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 876224CA0582A7D315F9BF7320CF8119 /* AAPopUp.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AAPopUp/AAPopUp-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AAPopUp/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AAPopUp/AAPopUp.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = AAPopUp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AAPopUp_Example/Pods-AAPopUp_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				SYMROOT = "${SRCROOT}/../build";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
+		C7BE62186E17127FF3B5B27A193214BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -494,56 +417,144 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_VERSION = 4.0;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		C5F601980478D91E674A9AA9AE6CADEC /* Release */ = {
+		D077E5AF30E3A09910AC48CA760A1280 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C786652D5D099CA86C43D92744310528 /* Pods-AAPopUp_Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D683BD2232A929E3B402B300CE0AC6CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DC82D231BD8374AEE8221A077DB52CA /* AAPopUp.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-AAPopUp_Example/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/AAPopUp/AAPopUp-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AAPopUp/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AAPopUp_Example/Pods-AAPopUp_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_AAPopUp_Example;
+				MODULEMAP_FILE = "Target Support Files/AAPopUp/AAPopUp.modulemap";
+				PRODUCT_MODULE_NAME = AAPopUp;
+				PRODUCT_NAME = AAPopUp;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		E1D9BEB4C8862CAF2B4A58C2C3A2927B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DC82D231BD8374AEE8221A077DB52CA /* AAPopUp.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AAPopUp/AAPopUp-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AAPopUp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AAPopUp/AAPopUp.modulemap";
+				PRODUCT_MODULE_NAME = AAPopUp;
+				PRODUCT_NAME = AAPopUp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -551,17 +562,17 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
-				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+				C7BE62186E17127FF3B5B27A193214BD /* Debug */,
+				D077E5AF30E3A09910AC48CA760A1280 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C642321131F2BFBA2080A087B6A2412F /* Build configuration list for PBXNativeTarget "AAPopUp" */ = {
+		3DC2C0DC499A3840DF54CB765FF2E08A /* Build configuration list for PBXNativeTarget "AAPopUp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				746CF1F52447B9B3A41A070E27F964B7 /* Debug */,
-				490B6EBFAA20866FC9516C54F8A9D6BA /* Release */,
+				E1D9BEB4C8862CAF2B4A58C2C3A2927B /* Debug */,
+				D683BD2232A929E3B402B300CE0AC6CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -569,8 +580,8 @@
 		DEC06F0199E19DAC9D78B96AF08734A9 /* Build configuration list for PBXNativeTarget "Pods-AAPopUp_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2B32F2104D37ED204D405C1865D1D428 /* Debug */,
-				C5F601980478D91E674A9AA9AE6CADEC /* Release */,
+				25C59240703AE0B3F516668E6D694446 /* Debug */,
+				AB5119DE6DC6B6ACC9D0675EB467BDAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

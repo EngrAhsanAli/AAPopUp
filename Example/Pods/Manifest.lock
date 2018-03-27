@@ -1,16 +1,16 @@
 PODS:
-  - AAPopUp (1.0.1)
+  - AAPopUp (0.1.2)
 
 DEPENDENCIES:
   - AAPopUp (from `../`)
 
 EXTERNAL SOURCES:
   AAPopUp:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  AAPopUp: 098fc63cdd8b7143f668aec7d180d305cda8d5ec
+  AAPopUp: c2665c333c800faca9baceee26110b51db2b94dc
 
 PODFILE CHECKSUM: fea167f1f2a68d89aa3b4b78999606b7aeed27ca
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.5.0.beta.1
