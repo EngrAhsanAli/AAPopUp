@@ -34,7 +34,7 @@
 		25DE0EC6F5E29FB671D0299CB467DF26 /* AAPopUp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AAPopUp-dummy.m"; sourceTree = "<group>"; };
 		2B9C74A719C702266987BC1F31D3E04A /* AAPopUp+Global.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AAPopUp+Global.swift"; path = "AAPopUp/Classes/AAPopUp+Global.swift"; sourceTree = "<group>"; };
 		2DC82D231BD8374AEE8221A077DB52CA /* AAPopUp.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AAPopUp.xcconfig; sourceTree = "<group>"; };
-		2DD6E47A311427BB49772E426E97931A /* AAPopUp.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = AAPopUp.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2DD6E47A311427BB49772E426E97931A /* AAPopUp.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = AAPopUp.podspec; sourceTree = "<group>"; };
 		2E2D9588A5A0B5F7B6AAB09B21D04508 /* Pods-AAPopUp_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AAPopUp_Example-dummy.m"; sourceTree = "<group>"; };
 		3330E36CCC6B6AF97B2B38B46D217A0E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C45F536141AF8AF83B77519A838DBE1 /* AAPopUp+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AAPopUp+Helper.swift"; path = "AAPopUp/Classes/AAPopUp+Helper.swift"; sourceTree = "<group>"; };
