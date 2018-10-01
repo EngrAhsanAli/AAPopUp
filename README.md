@@ -11,7 +11,6 @@
   - [Manual Installation](#section-id-79)
 - [Getting Started](#section-id-87)
   - [Define Global Options:](#section-id-88)
-  - [Define Popups through Identifiers](#section-id-100)
   - [Construct your first Popup!](#section-id-120)
   - [Access your objects](#section-id-129)
   - [Present your popup](#section-id-141)
@@ -23,7 +22,7 @@
 
 #AAPopUp
 
-[![Swift 3.0](https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat)](https://developer.apple.com/swift/) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![CocoaPods](https://img.shields.io/cocoapods/v/AAPopUp.svg)](http://cocoadocs.org/docsets/AAPopUp) [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)](https://github.com/Carthage/Carthage) [![Build Status](https://travis-ci.org/EngrAhsanAli/AAPopUp.svg?branch=master)](https://travis-ci.org/EngrAhsanAli/AAPopUp) 
+[![Swift 4.0](https://img.shields.io/badge/Swift-4.0-orange.svg?style=flat)](https://developer.apple.com/swift/) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![CocoaPods](https://img.shields.io/cocoapods/v/AAPopUp.svg)](http://cocoadocs.org/docsets/AAPopUp) [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)](https://github.com/Carthage/Carthage) [![Build Status](https://travis-ci.org/EngrAhsanAli/AAPopUp.svg?branch=master)](https://travis-ci.org/EngrAhsanAli/AAPopUp) 
 ![License MIT](https://img.shields.io/github/license/mashape/apistatus.svg) [![CocoaPods](https://img.shields.io/cocoapods/p/AAPopUp.svg)]()
 
 
@@ -80,8 +79,7 @@ use_frameworks!
 target '<Your Target Name>' do
 pod 'AAPopUp'
 // Latest (Swift 4)
-  pod 'AAPopUp', :git => 'https://github.com/EngrAhsanAli/AAPopUp.git', :branch => 'master'
-
+  pod 'AAPopUp', '2.0'
 end
 
 ```
@@ -137,29 +135,6 @@ options.cornerRadius = 4.0
 options.animationDuration = 0.3
 options.backgroundColor = UIColor.black.withAlphaComponent(0.7)
 ```
-
-
-<div id='section-id-100'/>
-
-##Define Popups through Identifiers
-
-You can define your popups view controllers with their respective identifiers as follow:
-
-
-```swift
-
-extension AAPopUp {
-
-static let demo1 = AAPopUps<String? ,String>(identifier: "DemoPopup")
-static let demo2 = AAPopUps<String? ,String>("Main" ,identifier: "DemoPopup")
-
-}
-
-
-```
-
-Note that you storyboard name is optional, you can define in `GlobalOptions`.
-
 
 <div id='section-id-120'/>
 
