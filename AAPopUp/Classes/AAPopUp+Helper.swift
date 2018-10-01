@@ -7,25 +7,6 @@
 //
 
 
-// MARK:- AAPopUps
-open class AAPopUps<S, V>: AAPopUp {
-    open let _storyboard: String?
-    open let _id: String
-    
-    public init(_ storyboard: String? = nil, identifier: String) {
-        self._storyboard = storyboard
-        self._id = identifier
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required public init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-
-}
-
-
 /// AAPopUp options
 open class AAPopUpOptions: NSObject {
     

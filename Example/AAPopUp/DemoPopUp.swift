@@ -15,15 +15,12 @@ class DemoPopUp: UIViewController {
     @IBOutlet weak var demoTextField: UITextField!
     @IBOutlet weak var demoTextView: UITextView!
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        
+
         setBorder(demoTextView)
         setBorder(demoTextField)
-        
         
     }
     
