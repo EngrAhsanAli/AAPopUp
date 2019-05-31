@@ -29,8 +29,8 @@ extension AAPopUp {
     
     /// register notificaitons for keyboard
     func registerKeyboardNotifications() {
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidChange(_:)), name:NSNotification.Name.UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidChange(_:)), name:NSNotification.Name.UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidChange(_:)), name:UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidChange(_:)), name:UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     /// Keyboard selector for changes
@@ -39,10 +39,10 @@ extension AAPopUp {
     @objc func keyboardDidChange(_ notification: NSNotification) {
         
         let info = notification.userInfo!
-        let keyboardHeight:CGFloat = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue.size.height
-        let duration:Double = info[UIKeyboardAnimationDurationUserInfoKey] as! Double
+        let keyboardHeight:CGFloat = (info[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue.size.height
+        let duration:Double = info[UIResponder.keyboardAnimationDurationUserInfoKey] as! Double
         
-        if notification.name == NSNotification.Name.UIKeyboardWillShow && keyboardIsVisible == false{
+        if notification.name == UIResponder.keyboardWillShowNotification && keyboardIsVisible == false{
             
             keyboardIsVisible = true
             
@@ -52,7 +52,7 @@ extension AAPopUp {
                 self.view.frame = frame
             })
             
-        } else if keyboardIsVisible == true && notification.name == NSNotification.Name.UIKeyboardWillShow{
+        } else if keyboardIsVisible == true && notification.name == UIResponder.keyboardWillShowNotification{
             
         }else {
             keyboardIsVisible = false

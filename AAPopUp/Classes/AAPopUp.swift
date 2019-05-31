@@ -11,7 +11,7 @@ import UIKit
 @objcMembers open class AAPopUp: UIViewController {
     
     /// Global options
-    open static var options = AAPopUpOptions()
+    public static var options = AAPopUpOptions()
 
     /// Popup View controller
     open var viewController: UIViewController!
@@ -98,10 +98,10 @@ import UIKit
         let scrollContentView = UIView(frame: scrollView.bounds)
         scrollView.addSubview(scrollContentView)
         
-        self.addChildViewController(viewController)
+        self.addChild(viewController)
         scrollContentView.addSubview(viewController.view!)
         
-        viewController.didMove(toParentViewController: self)
+        viewController.didMove(toParent: self)
         
         modalPresentationStyle = .overFullScreen
         viewController.view.layer.cornerRadius = AAPopUp.options.cornerRadius
